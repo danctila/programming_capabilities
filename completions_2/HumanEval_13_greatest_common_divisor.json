@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_13_greatest_common_divisor",
+  "prompt": "def greatest_common_divisor(a: int, b: int) -> int:\n    \"\"\" Return a greatest common divisor of two integers a and b\n    >>> greatest_common_divisor(3, 5)\n    1\n    >>> greatest_common_divisor(25, 15)\n    5\n    \"\"\"",
+  "completions": [
+    "\n    if a == 0 or b == 0:\n        return 0\n    while a != 0 and b != 0:\n        if a > b:\n            a = a % b\n        else:\n            b = b % a\n    return a\n\n",
+    "\n    if a == 0 or b == 0:\n        return 0\n    while a != 0 and b != 0:\n        if a > b:\n            a = a % b\n        else:\n            b = b % a\n    return a if a > b else b\n\n",
+    "\n    if a == 0 or b == 0:\n        return 0\n    while a != 0 and b != 0:\n        if a > b:\n            a %= b\n        else:\n            b %= a\n    return a if a != 0 else b\n\n",
+    "\n    if b == 0:\n        return a\n    return greatest_common_divisor(b, a % b)\n\n",
+    "\n    if b == 0:\n        return a\n    return greatest_common_divisor(b, a % b)\n\n",
+    "\n    if b == 0:\n        return a\n    return greatest_common_divisor(b, a % b)\n\n",
+    "\n    if b == 0:\n        return a\n    return greatest_common_divisor(b, a % b)\n\n",
+    "\n    if b == 0:\n        return a\n    return greatest_common_divisor(b, a % b)\n\n",
+    "\n    if a == 0:\n        return b\n    elif b == 0:\n        return a\n    else:\n        return greatest_common_divisor(b, a % b)\n\n",
+    "\n    if b == 0:\n        return a\n    return greatest_common_divisor(b, a % b)\n\n",
+    "\n    if a == 0 or b == 0:\n        return 0\n    while a != 0 and b != 0:\n        if a > b:\n            a = a % b\n        else:\n            b = b % a\n    return a if a != 0 else b\n\n",
+    "\n    if a == 0 or b == 0:\n        return 0\n    if a > b:\n        return greatest_common_divisor(b, a)\n    else:\n        return greatest_common_divisor(a, b % a)\n\n",
+    "\n    if a == 0 or b == 0:\n        return 0\n    while a != 0 and b != 0:\n        if a > b:\n            a = a % b\n        else:\n            b = b % a\n    return a if a > b else b\n\n",
+    "\n    if a == 0 or b == 0:\n        return 0\n    else:\n        while a != 0 and b != 0:\n            if a > b:\n                a = a % b\n            else:\n                b = b % a\n        return a if a != 0 else b\n\n",
+    "\n    if b == 0:\n        return a\n    return greatest_common_divisor(b, a % b)\n\n",
+    "\n    if a == 0 or b == 0:\n        return 0\n    while a != 0 and b != 0:\n        if a > b:\n            a = a % b\n        else:\n            b = b % a\n    return a if a != 0 else b\n\n",
+    "\n    if a == 0 or b == 0:\n        return 0\n    while a != 0 and b != 0:\n        if a > b:\n            a = a % b\n        else:\n            b = b % a\n    return a if a > b else b\n\n",
+    "\n    if a == 0 or b == 0:\n        return 0\n    while a != 0 and b != 0:\n        if a > b:\n            a %= b\n        else:\n            b %= a\n    return a if a != 0 else b\n\n",
+    "\n    if a == 0 or b == 0:\n        return 0\n    while a != 0 and b != 0:\n        if a > b:\n            a = a % b\n        else:\n            b = b % a\n    return a if a != 0 else b\n\n",
+    "\n    while b != 0:\n        a, b = b, a % b\n    return a\n\n"
+  ]
+}

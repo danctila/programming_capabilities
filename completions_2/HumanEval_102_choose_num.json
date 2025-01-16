@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_102_choose_num",
+  "prompt": "def choose_num(x: int, y: int) -> int:\n    \"\"\"This function takes two positive numbers x and y and returns the\n    biggest even integer number that is in the range [x, y] inclusive. If \n    there's no such number, then the function should return -1.\n\n    For example:\n    >>> choose_num(12, 15)\n    14\n    >>> choose_num(13, 12)\n    -1\n    \"\"\"",
+  "completions": [
+    "\n    if x > y:\n        return y\n    else:\n        return x\n",
+    "\n    if x >= y:\n        return y\n    else:\n        return x\n\n",
+    "\n    if x < y:\n        return choose_num(y, x)\n    else:\n        return choose_num(x, y)\n\n",
+    "\n    if x < y:\n        return choose_num(y, x)\n    else:\n        return choose_num(x, y)\n\n",
+    "\n    if x > y:\n        return -1\n    if x == y:\n        return x\n    if x % 2 == 0 and y % 2 == 0:\n        return x + y\n    if x % 2 == 0 and y % 2 != 0:\n        return x + y\n    if x % 2 != 0 and y % 2 == 0:\n        return x - y\n    if x % 2 != 0 and y % 2 != 0:\n        return x - y\n    return -1\n",
+    "\n    if x > y:\n        return -1\n    if x == y:\n        return x\n    if x % 2 == 0 and y % 2 == 0:\n        return x\n    if x % 2 == 0 and y % 2 != 0:\n        return y\n    if x % 2 != 0 and y % 2 == 0:\n        return y\n    return x\n",
+    "\n    if x > y:\n        return -1\n    if x == y:\n        return x\n    if x % 2 == 0:\n        return x\n    return x + 1\n\n",
+    "\n    if x <= y:\n        return x + 2 * y\n    else:\n        return -1\n\n",
+    "\n    if x > y:\n        return -1\n    elif x == y:\n        return x\n    else:\n        return (x + y) // 2\n\n",
+    "\n    if x > y:\n        return -1\n    if x == y:\n        return x\n    if x % 2 == 0:\n        return x // 2\n    return x // 2 + 1\n\n",
+    "\n    if x < y:\n        return x\n    else:\n        return y\n\n",
+    "\n    if x < y:\n        return choose_num(y, x)\n    else:\n        return choose_num(x, y - 1)\n\n",
+    "\n    if x > y:\n        return -1\n    if x == y:\n        return x\n    if x % 2 == 0:\n        return x // 2\n    return x // 2 + 1\n\n",
+    "\n    if x > y:\n        return -1\n    if x == y:\n        return x\n    if x % 2 == 0:\n        return x / 2\n    else:\n        return x + 1\n\n",
+    "\n    if x > y:\n        return -1\n    if x == y:\n        return x\n    if x % 2 == 0:\n        return x / 2\n    return x + 1\n",
+    "\n    if x <= y:\n        return int(x + y // 2)\n    else:\n        return -1\n\n",
+    "\n    if x > y:\n        return -1\n    if x == y:\n        return x\n    if x % 2 == 0:\n        return x\n    return x + 2\n\n",
+    "\n    if x > y:\n        return -1\n    if x == y:\n        return x\n    if x % 2 == 0:\n        return x\n    return x + 1\n",
+    "\n    if x > y:\n        return -1\n    if x == y:\n        return x\n    if x % 2 == 0:\n        return x / 2\n    return x + 1\n\n",
+    "\n    if x < y:\n        return choose_num(y, x)\n    else:\n        return choose_num(x, y)\n\n"
+  ]
+}

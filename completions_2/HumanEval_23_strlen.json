@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_23_strlen",
+  "prompt": "def strlen(string: str) -> int:\n    \"\"\" Return length of given string\n    >>> strlen('')\n    0\n    >>> strlen('abc')\n    3\n    \"\"\"",
+  "completions": [
+    "\n    return len(string)\n\n",
+    "\n    return len(string)\n\n",
+    "\n    return len(string)\n\n",
+    "\n    return len(string)\n\n",
+    "\n    return len(string)\n\n",
+    "\n    return len(string)\n\n",
+    "\n    return len(string)\n",
+    "\n    return len(string)\n\n",
+    "\n    return len(string)\n\n",
+    "\n    return len(string)\n\n",
+    "\n    return len(string)\n",
+    "\n    return len(string)\n\n",
+    "\n    return len(string)\n",
+    "\n    return len(string)\n\n",
+    "\n    return len(string)\n\n",
+    "\n    return len(string)\n\n",
+    "\n    return len(string)\n\n",
+    "\n    return len(string)\n\n",
+    "\n    return len(string)\n\n",
+    "\n    return len(string)\n"
+  ]
+}

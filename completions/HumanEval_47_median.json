@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_47_median",
+  "prompt": "from typing import List\n\ndef median(l: List[int]) -> float:\n    \"\"\"Return median of elements in the list l.\n    >>> median([3, 1, 2, 4, 5])\n    3\n    >>> median([-10, 4, 6, 1000, 10, 20])\n    15.0\n    \"\"\"",
+  "completions": [
+    "\n    return (l[len(l) // 2] + l[len(l) // 2 - 1]) / 2.0\n\n",
+    "\n    if len(l) % 2 == 0:\n        return (l[int(len(l)/2)] + l[int(len(l)/2)-1]) / 2.0\n    else:\n        return l[int(len(l)/2)]\n",
+    "\n    l.sort()\n    return l[len(l) // 2]\n",
+    "\n    if len(l) % 2 == 0:\n        return (l[len(l) // 2] + l[len(l) // 2 - 1]) / 2.0\n    else:\n        return l[len(l) // 2]\n",
+    "\n    if len(l) % 2 == 0:\n        return (l[len(l) // 2] + l[len(l) // 2 - 1]) / 2.0\n    else:\n        return l[len(l) // 2]\n",
+    "\n    if len(l) % 2 == 0:\n        return (l[int(len(l)/2)] + l[int(len(l)/2)-1]) / 2.0\n    else:\n        return l[int(len(l)/2)]\n",
+    "\n    l.sort()\n    return l[len(l) // 2]\n",
+    "\n    return (l[len(l) // 2] + l[len(l) // 2 + 1]) / 2.0\n\n",
+    "\n    if len(l) % 2 == 0:\n        return (l[int(len(l)/2)] + l[int(len(l)/2)-1]) / 2.0\n    else:\n        return l[int(len(l)/2)]\n",
+    "\n    if len(l) % 2 == 0:\n        return (l[int(len(l)/2)] + l[int(len(l)/2)-1]) / 2.0\n    else:\n        return l[int(len(l)/2)]\n",
+    "\n    if len(l) % 2 == 0:\n        return (l[len(l) // 2] + l[len(l) // 2 - 1]) / 2.0\n    else:\n        return l[len(l) // 2]\n",
+    "\n    if len(l) % 2 == 0:\n        return (l[int(len(l)/2)] + l[int(len(l)/2)-1]) / 2.0\n    else:\n        return l[int(len(l)/2)]\n",
+    "\n    if len(l) % 2 == 0:\n        return (l[int(len(l)/2)] + l[int(len(l)/2)-1]) / 2.0\n    else:\n        return l[int(len(l)/2)]\n",
+    "\n    if len(l) % 2 == 0:\n        return (l[int(len(l) / 2)] + l[int(len(l) / 2 - 1)]) / 2.0\n    else:\n        return l[int(len(l) / 2)]\n",
+    "\n    if len(l) % 2 == 0:\n        return (l[len(l) // 2] + l[len(l) // 2 - 1]) / 2.0\n    else:\n        return l[len(l) // 2]\n",
+    "\n    if len(l) % 2 == 0:\n        return (l[int(len(l)/2)] + l[int(len(l)/2)-1]) / 2.0\n    else:\n        return l[int(len(l)/2)]\n",
+    "\n    if len(l) % 2 == 0:\n        return (l[int(len(l)/2)] + l[int(len(l)/2)-1]) / 2.0\n    else:\n        return l[int(len(l)/2)]\n",
+    "\n    if len(l) % 2 == 0:\n        return (l[len(l) // 2] + l[len(l) // 2 - 1]) / 2.0\n    else:\n        return l[len(l) // 2]\n",
+    "\n    l.sort()\n    return (l[len(l) // 2] + l[len(l) // 2 - 1]) / 2.0\n",
+    "\n    if len(l) % 2 == 0:\n        return (l[len(l) // 2] + l[len(l) // 2 - 1]) / 2.0\n    else:\n        return l[len(l) // 2]\n"
+  ]
+}

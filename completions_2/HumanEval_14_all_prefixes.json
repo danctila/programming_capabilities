@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_14_all_prefixes",
+  "prompt": "from typing import List\n\ndef all_prefixes(string: str) -> List[str]:\n    \"\"\" Return list of all prefixes from shortest to longest of the input string\n    >>> all_prefixes('abc')\n    ['a', 'ab', 'abc']\n    \"\"\"",
+  "completions": [
+    "\n    return [s for s in string.split('') if len(s) > 0]\n",
+    "\n    return [string[i:i+1] for i in range(len(string))]\n",
+    "\n    return [s for s in string.split('') if len(s) > 0]\n",
+    "\n    return [s for s in string.split('') if len(s) > 0]\n",
+    "\n    return [string[i:i+1] for i in range(len(string))]\n",
+    "\n    if len(string) == 0:\n        return []\n    if len(string) == 1:\n        return [string]\n    return [string[0]] + all_prefixes(string[1:])\n",
+    "\n    return [s for s in string if len(s) > 0]\n",
+    "\n    return [x for x in string.split('') if len(x) > 0]\n",
+    "\n    return [string[i:i+1] for i in range(len(string))]\n",
+    "\n    return [x for x in string.split('') if len(x) > 0]\n",
+    "\n    return [s for s in string.split('') if len(s) > 0]\n",
+    "\n    return [s for s in string.split('') if len(s) > 0]\n",
+    "\n    return [string[i:i+1] for i in range(len(string))]\n",
+    "\n    return [s for s in string.split('') if len(s) > 0]\n",
+    "\n    prefix_list = []\n    for i in range(len(string) - 1):\n        prefix = string[i:i + 1]\n        if len(prefix) > len(prefix_list[-1]):\n            prefix_list.append(prefix)\n    return prefix_list\n",
+    "\n    return [s for s in string.split('') if len(s) > 0]\n",
+    "\n    return [x for x in string.split('') if len(x) > 1]\n",
+    "\n    return [s for s in string.split('') if len(s) > 0]\n",
+    "\n    return [string[i:i+1] for i in range(len(string))]\n",
+    "\n    return [string[i:i+1] for i in range(len(string))]\n"
+  ]
+}

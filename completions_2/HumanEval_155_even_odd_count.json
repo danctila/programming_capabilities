@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_155_even_odd_count",
+  "prompt": "from typing import Tuple\n\ndef even_odd_count(num: int) -> Tuple[int, int]:\n    \"\"\"Given an integer. return a tuple that has the number of even and odd digits respectively.\n\n     Example:\n    >>> even_odd_count(-12)\n    (1, 1)\n    >>> even_odd_count(123)\n    (1, 2)\n    \"\"\"",
+  "completions": [
+    "\n    if num < 0:\n        return (num, 0)\n    if num == 0:\n        return (0, 0)\n    if num % 10 == 0:\n        return (0, 1)\n    return (num // 10, num % 10)\n",
+    "\n    return (num // 10, num % 10)\n",
+    "\n    return (num // 10, num % 10)\n",
+    "\n    return (num // 10, num % 10)\n",
+    "\n    return (num // 10, num % 10)\n",
+    "\n    return (num // 10, num % 10)\n",
+    "\n    return (num // 10, num % 10)\n",
+    "\n    return (num // 10, num % 10)\n",
+    "\n    return (num // 10, num % 10)\n",
+    "\n    if num < 0:\n        return (0, 0)\n    if num == 0:\n        return (0, 0)\n    return (num // 10, num % 10)\n",
+    "\n    even_count = 0\n    odd_count = 0\n    while num > 0:\n        if num % 10 == 0:\n            odd_count += 1\n        else:\n            even_count += 1\n        num //= 10\n    return even_count, odd_count\n",
+    "\n    even_count = 0\n    odd_count = 0\n    while num > 0:\n        if num % 10 == 0:\n            odd_count += 1\n        else:\n            even_count += 1\n        num //= 10\n    return even_count, odd_count\n",
+    "\n    return (num // 10, num % 10)\n",
+    "\n    if num < 0:\n        return (-1, 0)\n    if num == 0:\n        return (0, 0)\n    if num == 1:\n        return (1, 1)\n    if num % 2 == 0:\n        return (0, 1)\n    return (1, 0)\n",
+    "\n    return (num // 10, num % 10)\n",
+    "\n    even_count = 0\n    odd_count = 0\n    for i in str(num):\n        if i % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n    return even_count, odd_count\n",
+    "\n    return (num // 10, num % 10)\n",
+    "\n    return (num // 10, num % 10)\n",
+    "\n    even_count = 0\n    odd_count = 0\n    while num > 0:\n        if num % 10 == 0:\n            num = num // 10\n            even_count += 1\n        else:\n            odd_count += 1\n            num = num // 10\n    return even_count, odd_count\n",
+    "\n    return (num // 10, num % 10)\n"
+  ]
+}

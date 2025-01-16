@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_123_get_odd_collatz",
+  "prompt": "from typing import List\n\ndef get_odd_collatz(n: int) -> List[int]:\n    \"\"\"\n    Given a positive integer n, return a sorted list that has the odd numbers in collatz sequence.\n\n    The Collatz conjecture is a conjecture in mathematics that concerns a sequence defined\n    as follows: start with any positive integer n. Then each term is obtained from the \n    previous term as follows: if the previous term is even, the next term is one half of \n    the previous term. If the previous term is odd, the next term is 3 times the previous\n    term plus 1. The conjecture is that no matter what value of n, the sequence will always reach 1.\n\n    Note: \n        1. Collatz(1) is [1].\n        2. returned list sorted in increasing order.\n\n    For example:\n    get_odd_collatz(5) returns [1, 5] # The collatz sequence for 5 is [5, 16, 8, 4, 2, 1], so the odd numbers are only 1, and 5.\n    >>> get_odd_collatz(5)\n    [1, 5]\n    \"\"\"",
+  "completions": [
+    "\n    if n == 1:\n        return [1]\n    if n % 2 == 0:\n        return [n] + get_odd_collatz(n / 2)\n    return [n * 3 + 1] + get_odd_collatz(n / 2)\n\n",
+    "\n    if n == 1:\n        return [1]\n    else:\n        return [n] + get_odd_collatz(n // 2) + get_odd_collatz(n * 3 + 1)\n\n",
+    "\n    if n == 1:\n        return [1]\n    if n % 2 == 0:\n        return [n] + get_odd_collatz(n / 2)\n    return [n * 3 + 1] + get_odd_collatz(n / 2)\n",
+    "\n    if n == 1:\n        return [1]\n    if n % 2 == 0:\n        return [n] + get_odd_collatz(n // 2)\n    return [n] + get_odd_collatz(3 * n + 1)\n\n",
+    "\n    if n < 1:\n        return []\n    if n == 1:\n        return [1]\n    if n % 2 == 0:\n        return [n]\n    return [n] + get_odd_collatz(n // 2) + get_odd_collatz(3 * n + 1)\n",
+    "\n    if n == 1:\n        return [1]\n    else:\n        return [n] + get_odd_collatz(n // 2) + get_odd_collatz(n * 3 + 1)\n",
+    "\n    if n == 1:\n        return [1]\n    else:\n        return [n] + get_odd_collatz(n // 2)\n",
+    "\n    if n < 1:\n        return []\n    if n == 1:\n        return [1]\n    if n % 2 == 0:\n        return [n] + get_odd_collatz(n/2)\n    return [n*3 + 1] + get_odd_collatz(n/2)\n",
+    "\n    if n == 1:\n        return [1]\n    else:\n        return [n] + get_odd_collatz(n // 2)\n",
+    "\n    if n == 1:\n        return [1]\n    else:\n        return [n] + get_odd_collatz(n // 2) + get_odd_collatz(n * 3 + 1)\n",
+    "\n    if n == 1:\n        return [1]\n    if n % 2 == 0:\n        return [n] + get_odd_collatz(n / 2)\n    return [n * 3 + 1] + get_odd_collatz(n / 2)\n",
+    "\n    if n == 1:\n        return [1]\n    if n % 2 == 0:\n        return [n] + get_odd_collatz(n / 2)\n    else:\n        return [3 * n + 1] + get_odd_collatz(n / 2)\n",
+    "\n    if n == 1:\n        return [1]\n    else:\n        odd_collatz = []\n        for i in range(2, n):\n            if n % 2 == 0:\n                odd_collatz.append(n // 2)\n            else:\n                odd_collatz.append(3 * n + 1)\n        return odd_collatz\n",
+    "\n    # TODO: Implement this function.\n    # 1. Create a list of odd numbers.\n    odd_numbers = [i for i in range(1, n+1) if i % 2 == 1]\n    # 2. Create a list of even numbers.\n    even_numbers = [i for i in range(1, n+1) if i % 2 == 0]\n    # 3. Sort the odd numbers.\n    odd_numbers.sort()\n    # 4. Sort the even numbers.\n    even_numbers.sort()\n    # 5. Return the odd numbers.\n    return odd_numbers\n",
+    "\n    odd_collatz = []\n    while n > 1:\n        if n % 2 == 0:\n            n = n / 2\n        else:\n            n = 3 * n + 1\n        odd_collatz.append(n)\n    return odd_collatz\n",
+    "\n    if n == 1:\n        return [1]\n    if n % 2 == 0:\n        return [n]\n    return [n + 1] + get_odd_collatz(n / 2)\n",
+    "\n    if n == 1:\n        return [1]\n    if n % 2 == 0:\n        return [n]\n    return [n + 1] + get_odd_collatz(n // 2)\n",
+    "\n    if n == 1:\n        return [1]\n    else:\n        odd_collatz = []\n        odd_collatz.append(n)\n        for i in range(2, n):\n            if n % 2 == 0:\n                odd_collatz.append(n / 2)\n            else:\n                odd_collatz.append(3 * n + 1)\n        return odd_collatz\n",
+    "\n    odd_collatz = []\n    while n > 1:\n        if n % 2 == 0:\n            n = n / 2\n        else:\n            n = 3 * n + 1\n        odd_collatz.append(n)\n    return odd_collatz\n",
+    "\n    odd_collatz = []\n    for i in range(1, n + 1):\n        if i % 2 == 0:\n            odd_collatz.append(i / 2)\n        else:\n            odd_collatz.append(3 * i + 1)\n    return odd_collatz\n"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_142_sum_squares",
+  "prompt": "from typing import List\n\ndef sum_squares(lst: List[int]) -> int:\n    \"\"\"\"\n    This function will take a list of integers. For all entries in the list, the function shall square the integer entry if its index is a \n    multiple of 3 and will cube the integer entry if its index is a multiple of 4 and not a multiple of 3. The function will not \n    change the entries in the list whose indexes are not a multiple of 3 or 4. The function shall then return the sum of all entries. \n    \n    Examples:\n    >>> lst\n    [1, 2, 3]\n    >>> lst\n    []\n    >>> lst\n    [-1, -5, 2, -1, -5]\n    \"\"\"",
+  "completions": [
+    "\n    sum_of_squares = 0\n    for i in range(len(lst)):\n        if i % 3 == 0:\n            sum_of_squares += lst[i] ** 2\n        if i % 4 == 0:\n            sum_of_squares += lst[i] ** 3\n    return sum_of_squares\n",
+    "\n    sum_of_squares = 0\n    for i in lst:\n        if i % 3 == 0:\n            sum_of_squares += i ** 2\n        if i % 4 == 0:\n            sum_of_squares += i ** 3\n    return sum_of_squares\n",
+    "\n    sum_of_squares = 0\n    for i in lst:\n        if i % 3 == 0:\n            sum_of_squares += i ** 2\n        elif i % 4 == 0:\n            sum_of_squares += i ** 3\n    return sum_of_squares\n",
+    "\n    sum = 0\n    for i in lst:\n        if i % 3 == 0:\n            sum += i ** 2\n        if i % 4 == 0:\n            sum += i ** 3\n    return sum\n",
+    "\n    sum_of_squares = 0\n    for i in lst:\n        if i % 3 == 0:\n            sum_of_squares += i ** 2\n        if i % 4 == 0:\n            sum_of_squares += i ** 3\n    return sum_of_squares\n",
+    "\n    sum_of_squares = 0\n    for i in lst:\n        if i % 3 == 0:\n            sum_of_squares += i ** 2\n        if i % 4 == 0:\n            sum_of_squares += i ** 3\n    return sum_of_squares\n",
+    "\n    squared = []\n    cubed = []\n    for i in lst:\n        if i % 3 == 0:\n            squared.append(i ** 2)\n        if i % 4 == 0:\n            cubed.append(i ** 3)\n    return sum(squared) + sum(cubed)\n",
+    "\n    sum_of_squares = 0\n    for i in lst:\n        if i % 3 == 0:\n            sum_of_squares += i ** 2\n        if i % 4 == 0:\n            sum_of_squares += i ** 3\n    return sum_of_squares\n",
+    "\n    sum_of_squares = 0\n    for index in range(len(lst)):\n        if index % 3 == 0:\n            sum_of_squares += lst[index] ** 2\n        if index % 4 == 0:\n            sum_of_squares += lst[index] ** 3\n    return sum_of_squares\n",
+    "\n    sum_of_squares = 0\n    for i in lst:\n        if i % 3 == 0:\n            sum_of_squares += i ** 2\n        if i % 4 == 0:\n            sum_of_squares += i ** 3\n    return sum_of_squares\n",
+    "\n    sum_of_squares = 0\n    for i in lst:\n        if i % 3 == 0:\n            sum_of_squares += i ** 2\n        if i % 4 == 0:\n            sum_of_squares += i ** 3\n    return sum_of_squares\n",
+    "\n    sum_of_squares = 0\n    for i in lst:\n        if i % 3 == 0:\n            sum_of_squares += i ** 2\n        if i % 4 == 0:\n            sum_of_squares += i ** 3\n    return sum_of_squares\n",
+    "\n    sum_of_squares = 0\n    for i in lst:\n        if i % 3 == 0:\n            sum_of_squares += i ** 2\n        if i % 4 == 0:\n            sum_of_squares += i ** 3\n    return sum_of_squares\n",
+    "\n    sum_of_squares = 0\n    for i in lst:\n        if i % 3 == 0:\n            sum_of_squares += i ** 2\n        else:\n            sum_of_squares += i ** 3\n    return sum_of_squares\n",
+    "\n    sum_of_squares = 0\n    for i in lst:\n        if i % 3 == 0:\n            sum_of_squares += i ** 2\n        if i % 4 == 0:\n            sum_of_squares += i ** 3\n    return sum_of_squares\n",
+    "\n    sum_of_squares = 0\n    for i in range(len(lst)):\n        if i % 3 == 0:\n            sum_of_squares += (lst[i] ** 2)\n        if i % 4 == 0:\n            sum_of_squares += (lst[i] ** 3)\n    return sum_of_squares\n",
+    "\n    sum_squares_result = 0\n    for i in lst:\n        if i % 3 == 0:\n            sum_squares_result += i ** 2\n        if i % 4 == 0:\n            sum_squares_result += i ** 3\n    return sum_squares_result\n",
+    "\n    sum_squares = 0\n    for i in lst:\n        if i % 3 == 0:\n            sum_squares += i ** 2\n        if i % 4 == 0:\n            sum_squares += i ** 3\n    return sum_squares\n",
+    "\n    sum_of_squares = 0\n    for i in lst:\n        if i % 3 == 0:\n            sum_of_squares += i ** 2\n        if i % 4 == 0:\n            sum_of_squares += i ** 3\n    return sum_of_squares\n",
+    "\n    # TODO: Implement the function here\n    return sum(map(lambda x: x**3, lst)) + sum(map(lambda x: x**4, lst))\n"
+  ]
+}

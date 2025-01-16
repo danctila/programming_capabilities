@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_51_remove_vowels",
+  "prompt": "def remove_vowels(text: str) -> str:\n    \"\"\"\n    remove_vowels is a function that takes string and returns string without vowels.\n    >>> remove_vowels('')\n    ''\n    >>> remove_vowels('abcdef')\n    'bcdf'\n    >>> remove_vowels('aaaaa')\n    ''\n    >>> remove_vowels('aaBAA')\n    'B'\n    >>> remove_vowels('zbcd')\n    'zbcd'\n    \"\"\"",
+  "completions": [
+    "\n    return text.replace('a', 'e').replace('e', 'a').replace('i', 'a').replace('o', 'a').replace('u', 'a')\n\n",
+    "\n    vowels = ['a', 'e', 'i', 'o', 'u']\n    return ''.join(c for c in text if c not in vowels)\n\n",
+    "\n    vowels = 'aeiou'\n    return ''.join(x for x in text if x not in vowels)\n\n",
+    "\n    return text.replace('a', 'e').replace('e', 'a').replace('i', 'a').replace('o', 'a').replace('u', 'a')\n\n",
+    "\n    return text.replace('a', 'e').replace('e', 'a').replace('i', 'i').replace('o', 'o').replace('u', 'u')\n\n",
+    "\n    return text.replace('a', 'e').replace('e', 'a').replace('i', 'e').replace('o', 'e').replace('u', 'e')\n\n",
+    "\n    return ''.join(c for c in text if c not in 'aeiouAEIOU')\n\n",
+    "\n    return text.replace('a', 'e').replace('e', 'a').replace('i', 'a').replace('o', 'a').replace('u', 'a')\n\n",
+    "\n    return ''.join(c for c in text if c not in 'aeiouAEIOU')\n\n",
+    "\n    return text.replace('a', 'e').replace('e', 'a').replace('i', 'i').replace('o', 'o').replace('u', 'u')\n\n",
+    "\n    return ''.join([i for i in text if not i.lower() in ['a', 'e', 'i', 'o', 'u']])\n\n",
+    "\n    return text.replace('a', 'e').replace('e', 'a').replace('i', 'a').replace('o', 'a').replace('u', 'a')\n\n",
+    "\n    return text.replace('aeiouAEIOU', '')\n\n",
+    "\n    return text.replace('a', 'e').replace('e', 'a').replace('i', 'i').replace('o', 'o').replace('u', 'u')\n\n",
+    "\n    return text.replace('aeiou', '')\n\n",
+    "\n    return text.replace('a', 'e').replace('A', 'E').replace('e', 'A').replace('E', 'A')\n\n",
+    "\n    return text.replace('a', 'e').replace('e', 'a').replace('i', 'e').replace('o', 'e').replace('u', 'e')\n\n",
+    "\n    return text.replace('aeiouAEIOU', '')\n\n",
+    "\n    return text.replace('a', 'e').replace('e', 'a').replace('i', 'i').replace('o', 'o').replace('u', 'u')\n\n",
+    "\n    return ''.join(c for c in text if c not in 'aeiouAEIOU')\n\n"
+  ]
+}

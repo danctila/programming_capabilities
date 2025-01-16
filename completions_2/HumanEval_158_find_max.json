@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_158_find_max",
+  "prompt": "from typing import List\n\ndef find_max(words: List[str]) -> str:\n    \"\"\"Write a function that accepts a list of strings.\n    The list contains different words. Return the word with maximum number\n    of unique characters. If multiple strings have maximum number of unique\n    characters, return the one which comes first in lexicographical order.\n\n    >>> find_max(['name', 'of', 'string'])\n    'string'\n    >>> find_max(['name', 'enam', 'game'])\n    'enam'\n    >>> find_max(['aaaaaaa', 'bb', 'cc'])\n    'aaaaaaa'\n    \"\"\"",
+  "completions": [
+    "\n    return max(set(word) for word in words)\n",
+    "\n    return max(set(w.lower() for w in words), key=len)\n\n",
+    "\n    # TODO: Implement your solution here\n    return max(set(words), key=len)\n\n",
+    "\n    return max(set(word.lower() for word in words), key=len)\n\n",
+    "\n    return max(set(word.lower() for word in words), key=len)\n\n",
+    "\n    return max(set(words), key=len)\n",
+    "\n    words = sorted(words, key=len)\n    return words[0] if len(words) > 1 else words[0]\n\n",
+    "\n    return max(set(words), key=len)\n",
+    "\n    return max(set(words), key=len)\n\n",
+    "\n    return max(set(word) for word in words)\n\n",
+    "\n    return max(words, key=len)\n\n",
+    "\n    return max(set(words), key=len)\n\n",
+    "\n    return max(set(word) for word in words)\n",
+    "\n    return max(set(word) for word in words)\n",
+    "\n    max_char = max(set(words))\n    return max_char\n\n",
+    "\n    return max(set(word.lower() for word in words), key=len)\n\n",
+    "\n    return max(set(words), key=len)\n\n",
+    "\n    return max(set(word.lower() for word in words), key=len)\n\n",
+    "\n    # Your code here\n    return max(set(words), key=len)\n",
+    "\n    return max(set(words), key=len)\n\n"
+  ]
+}

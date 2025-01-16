@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_85_add",
+  "prompt": "from typing import List\n\ndef add(lst: List[int]) -> int:\n    \"\"\"Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\n\n    Examples:\n    >>> add([4, 2, 6, 7])\n    2\n    \"\"\"",
+  "completions": [
+    "\n    return sum(i for i in lst if i % 2 == 0)\n",
+    "\n    if len(lst) % 2 == 0:\n        return sum(lst[i] for i in range(len(lst) // 2) if lst[i] % 2 == 0)\n    else:\n        return sum(lst[i] for i in range(len(lst) // 2) if lst[i] % 2 == 1)\n",
+    "\n    return sum(i for i in lst if i % 2 == 0 and i % 2 != 0)\n",
+    "\n    if not lst:\n        return 0\n    return sum(lst[i] for i in range(len(lst) // 2) if lst[i] % 2 == 0)\n",
+    "\n    return sum(i for i in lst if i % 2 == 0)\n",
+    "\n    return sum(i for i in lst if i % 2 == 0)\n",
+    "\n    return sum(i for i in lst if i % 2 == 0)\n\n",
+    "\n    return sum(i for i in lst if i % 2 == 0)\n",
+    "\n    return sum(x for x in lst if x % 2 == 0 and x % 2 != 0)\n",
+    "\n    return sum(lst[i] for i in range(0, len(lst), 2) if lst[i] % 2 == 0)\n",
+    "\n    return sum(i % 2 == 0 for i in lst)\n",
+    "\n    return sum(lst[i] for i in range(0, len(lst), 2) if lst[i] % 2 == 0)\n",
+    "\n    return sum(x for x in lst if x % 2 == 0)\n\n",
+    "\n    return sum(i for i in lst if i % 2 == 0)\n",
+    "\n    return sum(i for i in lst if i % 2 == 0)\n",
+    "\n    return sum(i for i in lst if i % 2 == 0)\n",
+    "\n    return sum(i for i in lst if i % 2 == 0)\n",
+    "\n    return sum(x for x in lst if x % 2 == 0)\n",
+    "\n    if not lst:\n        return 0\n    if len(lst) % 2 == 0:\n        return lst[0] + add(lst[1:])\n    else:\n        return lst[0] + add(lst[1:]) + lst[2]\n\n",
+    "\n    return sum(i for i in lst if i % 2 == 0)\n"
+  ]
+}

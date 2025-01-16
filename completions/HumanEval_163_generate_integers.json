@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_163_generate_integers",
+  "prompt": "from typing import List\n\ndef generate_integers(a: int, b: int) -> List[int]:\n    \"\"\"\n    Given two positive integers a and b, return the even digits between a\n    and b, in ascending order.\n\n    For example:\n    >>> generate_integers(2, 8)\n    [2, 4, 6, 8]\n    >>> generate_integers(8, 2)\n    [2, 4, 6, 8]\n    >>> generate_integers(10, 14)\n    []\n    \"\"\"",
+  "completions": [
+    "\n    return [int(i) for i in str(a) if i % 2 == 0]\n",
+    "\n    return [int(x) for x in str(a) if x % 2 == 0]\n",
+    "\n    return [int(i) for i in str(a) if i % 2 == 0]\n\n",
+    "\n    return [int(i) for i in str(a) if int(i) % 2 == 0]\n",
+    "\n    return [int(i) for i in str(a) if i % 2 == 0]\n\n",
+    "\n    return [int(x) for x in str(a) if x % 2 == 0]\n",
+    "\n    return [int(i) for i in str(a) if int(i) % 2 == 0]\n",
+    "\n    return [int(i) for i in str(a) if int(i) % 2 == 0]\n",
+    "\n    return [int(i) for i in str(a) if i % 2 == 0]\n",
+    "\n    return [int(i) for i in str(a) if i % 2 == 0]\n\n",
+    "\n    return [int(i) for i in str(a) if a % 2 == 0]\n",
+    "\n    return [int(i) for i in str(a) if i % 2 == 0]\n",
+    "\n    return [int(i) for i in str(a) if int(i) % 2 == 0]\n",
+    "\n    return [int(i) for i in str(a) if i % 2 == 0]\n",
+    "\n    return [int(i) for i in str(a) if int(i) % 2 == 0]\n",
+    "\n    return [int(i) for i in str(a) if i % 2 == 0]\n",
+    "\n    return [int(i) for i in str(a) if i % 2 == 0]\n",
+    "\n    return [int(i) for i in str(a) if i % 2 == 0]\n\n",
+    "\n    return [int(i) for i in str(a) if i % 2 == 0]\n",
+    "\n    return [int(i) for i in str(a) if i % 2 == 0]\n\n"
+  ]
+}

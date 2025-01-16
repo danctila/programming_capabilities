@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_45_triangle_area",
+  "prompt": "def triangle_area(a: int, h: int) -> float:\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> triangle_area(5, 3)\n    7.5\n    \"\"\"",
+  "completions": [
+    "\n    return a * h / 2\n\n",
+    "\n    return a * h / 2\n\n",
+    "\n    return a * h / 2\n\n",
+    "\n    return 0.5 * a * h\n\n",
+    "\n    return a * h / 2\n\n",
+    "\n    return a * h / 2\n\n",
+    "\n    return a * h / 2\n",
+    "\n    return a * h / 2\n\n",
+    "\n    return a * h / 2\n\n",
+    "\n    return a * h / 2\n\n",
+    "\n    return a * h / 2\n\n",
+    "\n    return a * h / 2\n\n",
+    "\n    return 0.5 * a * h\n\n",
+    "\n    return a * h / 2\n\n",
+    "\n    return 0.5 * a * h\n\n",
+    "\n    return a * h / 2\n",
+    "\n    return a * h / 2\n\n",
+    "\n    return 0.5 * a * h\n\n",
+    "\n    return 0.5 * a * h\n\n",
+    "\n    return a * h / 2\n\n"
+  ]
+}

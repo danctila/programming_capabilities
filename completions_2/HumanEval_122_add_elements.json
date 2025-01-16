@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_122_add_elements",
+  "prompt": "from typing import List\n\ndef add_elements(arr: List[int], k: int) -> int:\n    \"\"\"\n    Given a non-empty array of integers arr and an integer k, return\n    the sum of the elements with at most two digits from the first k elements of arr.\n\n    Example:\n\n    >>> add_elements([111, 21, 3, 4000, 5, 6, 7, 8, 9], 4)\n    24\n\n    Constraints:\n        1. 1 <= len(arr) <= 100\n        2. 1 <= k <= len(arr)\n    \"\"\"",
+  "completions": [
+    "\n    return sum(arr[:k]) + sum(arr[k:])\n",
+    "\n    return sum(arr[:k]) + sum(arr[k:])\n\n",
+    "\n    return sum(arr[:k]) + sum(arr[k:])\n",
+    "\n    return sum(arr[:k]) + sum(arr[k:])\n\n",
+    "\n    # TODO: Write your code here\n    if len(arr) < 2:\n        return 0\n    return sum(arr[:k]) + sum(arr[k:])\n",
+    "\n    return sum(arr[:k]) + sum(arr[k:])\n\n",
+    "\n    return sum(arr[:k]) + sum(arr[k:])\n\n",
+    "\n    return sum(arr[:k]) + sum(arr[k:])\n\n",
+    "\n    sum_of_digits = 0\n    for i in range(len(arr)):\n        sum_of_digits += arr[i]\n    if sum_of_digits % 10 == 0:\n        return sum_of_digits\n    return sum_of_digits + (sum_of_digits // 10) * 10\n\n",
+    "\n    return sum(arr[:k]) + sum(arr[k:])\n\n",
+    "\n    return sum(arr[:k])\n\n",
+    "\n    return sum(arr[:k]) + sum(arr[k:])\n\n",
+    "\n    return sum(arr[:k]) + sum(arr[k:])\n\n",
+    "\n    return sum(arr[:k]) + sum(arr[k:])\n\n",
+    "\n    if len(arr) < 2:\n        return 0\n    return sum(arr[:k]) + sum(arr[k:])\n\n",
+    "\n    return sum(arr[:k]) + sum(arr[k:])\n",
+    "\n    if len(arr) < 2:\n        return 0\n    return sum(arr[:k]) + sum(arr[k:])\n",
+    "\n    return sum(arr[:k]) + sum(arr[k:])\n",
+    "\n    if len(arr) < 2:\n        return 0\n    return sum(arr[:k]) + sum(arr[k:])\n",
+    "\n    return sum(arr[:k]) + sum(arr[k:])\n\n"
+  ]
+}

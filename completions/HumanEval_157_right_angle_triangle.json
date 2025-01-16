@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_157_right_angle_triangle",
+  "prompt": "def right_angle_triangle(a: int, b: int, c: int) -> bool:\n    \"\"\"\n    Given the lengths of the three sides of a triangle. Return True if the three\n    sides form a right-angled triangle, False otherwise.\n    A right-angled triangle is a triangle in which one angle is right angle or \n    90 degree.\n    Example:\n    >>> right_angle_triangle(3, 4, 5)\n    True\n    >>> right_angle_triangle(1, 2, 3)\n    False\n    \"\"\"",
+  "completions": [
+    "\n    if a + b > c and a + c > b and b + c > a:\n        return True\n    return False\n",
+    "\n    if a + b > c or a + c > b or b + c > a:\n        return False\n    return True\n",
+    "\n    return (a + b > c) and (a + c > b) and (b + c > a)\n",
+    "\n    if a == 0 or b == 0 or c == 0:\n        return False\n    if a == b == c:\n        return True\n    if a + b > c and b + c > a and a + c > b:\n        return True\n    return False\n",
+    "\n    if a + b > c and a + c > b and b + c > a:\n        return True\n    return False\n",
+    "\n    if a + b > c and a + c > b and b + c > a:\n        return True\n    return False\n",
+    "\n    if a + b > c and a + c > b and b + c > a:\n        return True\n    return False\n",
+    "\n    if a == b and b == c:\n        return True\n    if a == b or b == c or a == c:\n        return True\n    return False\n",
+    "\n    if a + b > c and a + c > b and b + c > a:\n        return True\n    return False\n",
+    "\n    if a == b == c:\n        return True\n    if a + b > c and a + c > b and b + c > a:\n        return True\n    return False\n",
+    "\n    if a + b > c or a + c > b or b + c > a:\n        return False\n    return True\n",
+    "\n    if a + b > c or a + c > b or b + c > a:\n        return False\n    return True\n",
+    "\n    if a == 0 or b == 0 or c == 0:\n        return False\n    if a + b > c or a + c > b or b + c > a:\n        return False\n    return True\n",
+    "\n    if a + b > c and a + c > b and b + c > a:\n        return True\n    return False\n",
+    "\n    if a == b == c:\n        return True\n    if a + b > c or b + c > a or a + c > b:\n        return False\n    return True\n",
+    "\n    if a + b > c and a + c > b and b + c > a:\n        return True\n    return False\n",
+    "\n    return (a + b) == c or (a + c) == b or (b + c) == a\n\n",
+    "\n    return (a + b > c) and (a + c > b) and (b + c > a)\n",
+    "\n    if a == b == c:\n        return True\n    if a + b > c and a + c > b and b + c > a:\n        return True\n    return False\n",
+    "\n    if a + b > c and a + c > b and b + c > a:\n        return True\n    return False\n\n"
+  ]
+}

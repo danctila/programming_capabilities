@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_11_string_xor",
+  "prompt": "def string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\"",
+  "completions": [
+    "\n    return ''.join(map(str, [a ^ b] * len(a)))\n\n",
+    "\n    return ''.join(map(str, [int(x) ^ int(y) for x, y in zip(a, b)]))\n\n",
+    "\n    return ''.join(map(str, [int(x) ^ int(y) for x, y in zip(a, b)]))\n\n",
+    "\n    return ''.join([str(a ^ b) for a, b in zip(a, b)])\n\n",
+    "\n    return ''.join(map(str, [int(x) ^ int(y) for x, y in zip(a, b)]))\n\n",
+    "\n    return ''.join([str(a ^ b) for a, b in zip(a, b)])\n\n",
+    "\n    return ''.join([chr(ord(a) ^ ord(b)) for a, b in zip(a, b)])\n\n",
+    "\n    return ''.join([str(a[i] ^ b[i]) for i in range(len(a))])\n\n",
+    "\n    return ''.join([str(a[i] ^ b[i]) for i in range(len(a))])\n\n",
+    "\n    return ''.join(map(str, [int(x) ^ int(y) for x, y in zip(a, b)]))\n\n",
+    "\n    return ''.join([str(ord(a[i]) ^ ord(b[i])) for i in range(len(a))])\n\n",
+    "\n    return ''.join(map(str, [int(x) ^ int(y) for x, y in zip(a, b)]))\n\n",
+    "\n    return ''.join([chr(ord(a[i]) ^ ord(b[i])) for i in range(len(a))])\n\n",
+    "\n    return ''.join([str(a ^ b) for a, b in zip(a, b)])\n\n",
+    "\n    return ''.join(map(str, [int(x) ^ int(y) for x, y in zip(a, b)]))\n\n",
+    "\n    return ''.join([str(ord(a[i]) ^ ord(b[i])) for i in range(len(a))])\n\n",
+    "\n    return ''.join(map(str, [int(x) ^ int(y) for x, y in zip(a, b)]))\n\n",
+    "\n    return ''.join([str(a ^ b) for a, b in zip(a, b)])\n\n",
+    "\n    return ''.join([chr(ord(a) ^ ord(b)) for a, b in zip(a, b)])\n\n",
+    "\n    return ''.join(map(str, [a ^ b] * len(a)))\n\n"
+  ]
+}

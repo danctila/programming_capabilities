@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_134_check_if_last_char_is_a_letter",
+  "prompt": "def check_if_last_char_is_a_letter(txt: str) -> bool:\n    \"\"\"\n    Create a function that returns True if the last character\n    of a given string is an alphabetical character and is not\n    a part of a word, and False otherwise.\n    Note: \"word\" is a group of characters separated by space.\n\n    Examples:\n    >>> check_if_last_char_is_a_letter('apple pie')\n    False\n    >>> check_if_last_char_is_a_letter('apple pi e')\n    True\n    >>> check_if_last_char_is_a_letter('apple pi e ')\n    False\n    >>> check_if_last_char_is_a_letter('')\n    False\n    \"\"\"",
+  "completions": [
+    "\n    if txt[-1] in 'abcdefghijklmnopqrstuvwxyz':\n        return True\n    return False\n\n",
+    "\n    return txt[-1] in 'abcdefghijklmnopqrstuvwxyz' and not txt.endswith(' ').isalpha()\n\n",
+    "\n    if txt.endswith(' '):\n        return False\n    return True\n\n",
+    "\n    return txt[-1] not in 'aeiouAEIOU'\n\n",
+    "\n    return not txt[len(txt) - 1].isalpha()\n\n",
+    "\n    return txt[-1] in 'abcdefghijklmnopqrstuvwxyz'\n\n",
+    "\n    return txt[-1].isalpha() and not txt.endswith(' ').isalpha()\n\n",
+    "\n    return txt[-1].isalpha() and not txt.endswith(' ').isalpha()\n\n",
+    "\n    return txt[-1] not in 'aeiouAEIOU'\n\n",
+    "\n    return txt[-1] in 'abcdefghijklmnopqrstuvwxyz' and not txt.endswith(' ').isalpha()\n\n",
+    "\n    return txt[-1] in 'abcdefghijklmnopqrstuvwxyz' and not txt.endswith(' ').isalpha()\n\n",
+    "\n    return txt[-1] in 'abcdefghijklmnopqrstuvwxyz' and not txt.endswith(' ').isalpha()\n\n",
+    "\n    return txt[-1] in 'abcdefghijklmnopqrstuvwxyz'\n\n",
+    "\n    if txt.endswith(' '):\n        return False\n    return not txt.isalpha() and not txt.isalpha()\n\n",
+    "\n    return txt[-1].isalpha() and not txt.endswith(' ').isalpha()\n\n",
+    "\n    # TODO: Implement this function\n    return txt[-1] in 'aeiou'\n\n",
+    "\n    return txt[-1].isalpha() and not txt.endswith(' ').isalpha()\n\n",
+    "\n    if txt[-1] not in 'abcdefghijklmnopqrstuvwxyz':\n        return False\n    return True\n\n",
+    "\n    if txt[-1] not in 'abcdefghijklmnopqrstuvwxyz':\n        return False\n    return True\n\n",
+    "\n    return not txt[len(txt) - 1].isalpha()\n\n"
+  ]
+}

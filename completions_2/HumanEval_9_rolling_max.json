@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_9_rolling_max",
+  "prompt": "from typing import List\n\ndef rolling_max(numbers: List[int]) -> List[int]:\n    \"\"\" From a given list of integers, generate a list of rolling maximum element found until given moment\n    in the sequence.\n    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])\n    [1, 2, 3, 3, 3, 4, 4]\n    \"\"\"",
+  "completions": [
+    "\n    max_list = []\n    for i in range(len(numbers)):\n        max_list.append(max(numbers[i:i + 3]))\n    return max_list\n",
+    "\n    max_list = []\n    for i in range(len(numbers) - 1):\n        max_list.append(max(numbers[i:i + 2]))\n    return max_list\n",
+    "\n    max_list = []\n    for i in range(len(numbers)):\n        max_list.append(numbers[i])\n        if i + 1 < len(numbers):\n            max_list.append(numbers[i + 1])\n    return max_list\n",
+    "\n    if not numbers:\n        return []\n    max_so_far = numbers[0]\n    max_so_far_index = 0\n    for i in range(1, len(numbers)):\n        if numbers[i] > max_so_far:\n            max_so_far = numbers[i]\n            max_so_far_index = i\n        else:\n            max_so_far = max(max_so_far, numbers[i])\n    return [max_so_far, max_so_far_index]\n",
+    "\n    max_list = []\n    for i in range(len(numbers)):\n        max_list.append(max(numbers[i:i+1]))\n    return max_list\n",
+    "\n    max_list = []\n    for i in range(len(numbers) - 1):\n        max_list.append(numbers[i] + numbers[i + 1])\n    return max_list\n",
+    "\n    max_list = []\n    for i in range(len(numbers) - 1):\n        max_list.append(max(numbers[i:i + 2]))\n    return max_list\n",
+    "\n    max_list = []\n    for i in range(len(numbers)):\n        max_list.append(max(numbers[i:i+2]))\n    return max_list\n",
+    "\n    max_list = []\n    for i in range(len(numbers)):\n        max_list.append(numbers[i])\n        if i + 1 < len(numbers) and numbers[i + 1] > numbers[i]:\n            max_list.append(numbers[i + 1])\n    return max_list\n",
+    "\n    max_list = []\n    for i in range(len(numbers)):\n        max_list.append(numbers[i])\n        if i + 1 < len(numbers):\n            max_list.append(max(numbers[i], numbers[i + 1]))\n    return max_list\n",
+    "\n    # TODO: Implement this function\n    return []\n\n",
+    "\n    max_list = []\n    for i in range(len(numbers)):\n        max_list.append(max(numbers[i:i+2]))\n    return max_list\n",
+    "\n    max_list = []\n    for i in range(len(numbers)):\n        max_list.append(max(numbers[i:i+2]))\n    return max_list\n",
+    "\n    max_list = []\n    for i in range(len(numbers)):\n        max_list.append(max(numbers[i:i+2]))\n    return max_list\n",
+    "\n    if len(numbers) <= 1:\n        return numbers\n    else:\n        return [max(numbers[i:i+2]) for i in range(len(numbers)-1)]\n",
+    "\n    max_list = []\n    for i in range(len(numbers)):\n        max_list.append(numbers[i])\n        if i + 1 < len(numbers):\n            max_list.append(numbers[i + 1])\n    return max_list\n",
+    "\n    if not numbers:\n        return []\n    if len(numbers) == 1:\n        return [numbers[0]]\n    max_list = [numbers[0]]\n    for i in range(1, len(numbers)):\n        max_list.append(max(max_list[i-1], numbers[i]))\n    return max_list\n",
+    "\n    max_list = []\n    for i in range(len(numbers)):\n        max_list.append(max(numbers[i:i+2]))\n    return max_list\n",
+    "\n    max_list = []\n    for i in range(len(numbers)):\n        max_list.append(numbers[i])\n        for j in range(i + 1, len(numbers)):\n            if numbers[j] > max_list[-1]:\n                max_list.append(numbers[j])\n    return max_list\n",
+    "\n    max_list = []\n    for i in range(len(numbers) - 1):\n        max_list.append(max(numbers[i:i + 2]))\n    return max_list\n"
+  ]
+}

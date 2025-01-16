@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_98_count_upper",
+  "prompt": "def count_upper(s: str) -> int:\n    \"\"\"\n    Given a string s, count the number of uppercase vowels in even indices.\n    \n    For example:\n    >>> count_upper('aBCdEf')\n    1\n    >>> count_upper('abcdefg')\n    0\n    >>> count_upper('dBBE')\n    0\n    \"\"\"",
+  "completions": [
+    "\n    count = 0\n    for i in range(len(s)):\n        if s[i].isupper():\n            count += 1\n    return count\n",
+    "\n    return sum(1 for i, c in enumerate(s) if c.isupper())\n",
+    "\n    count = 0\n    for i in range(len(s)):\n        if s[i] == 'A' or s[i] == 'E' or s[i] == 'I' or s[i] == 'O' or s[i] == 'U':\n            count += 1\n    return count\n",
+    "\n    return sum(1 for c in s if c.isupper())\n",
+    "\n    return sum(1 for i in range(len(s)) if s[i] == 'A' or s[i] == 'E' or s[i] == 'I' or s[i] == 'O' or s[i] == 'U')\n",
+    "\n    return len(s) // 2\n\n",
+    "\n    count = 0\n    for i in range(len(s)):\n        if s[i].isupper():\n            count += 1\n    return count\n",
+    "\n    count = 0\n    for i in range(len(s)):\n        if s[i].isupper():\n            count += 1\n    return count\n",
+    "\n    return sum(1 for i, c in enumerate(s) if c.isupper())\n\n",
+    "\n    return sum(1 for c in s if c.isupper())\n",
+    "\n    return len(s) // 2 - 1\n\n",
+    "\n    return sum(s.count(v) for v in 'aeiouAEIOU') // 2\n\n",
+    "\n    return sum(1 for i, c in enumerate(s) if c.isupper())\n\n",
+    "\n    count = 0\n    for i in range(len(s)):\n        if s[i] == 'A' or s[i] == 'E' or s[i] == 'I' or s[i] == 'O' or s[i] == 'U':\n            count += 1\n    return count\n",
+    "\n    count = 0\n    for i in range(len(s)):\n        if s[i].isupper():\n            count += 1\n    return count\n",
+    "\n    return sum(1 for i, c in enumerate(s) if c == 'A' or c == 'E' or c == 'I' or c == 'O' or c == 'U')\n",
+    "\n    count = 0\n    for i in range(len(s)):\n        if s[i].isupper():\n            count += 1\n    return count\n",
+    "\n    return sum(1 for i, c in enumerate(s) if c.isupper())\n",
+    "\n    count = 0\n    for i in range(len(s)):\n        if s[i].isupper():\n            count += 1\n    return count\n",
+    "\n    count = 0\n    for i in range(len(s)):\n        if s[i].isupper():\n            count += 1\n    return count\n"
+  ]
+}

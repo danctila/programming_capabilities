@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_133_sum_squares",
+  "prompt": "from typing import List\n\ndef sum_squares(lst: List[float]) -> int:\n    \"\"\"You are given a list of numbers.\n    You need to return the sum of squared numbers in the given list,\n    round each element in the list to the upper int(Ceiling) first.\n    Examples:\n    >>> lst([1.0, 2.0, 3.0])\n    14\n    >>> lst([1.0, 4.0, 9.0])\n    98\n    >>> lst([1.0, 3.0, 5.0, 7.0])\n    84\n    >>> lst([1.4, 4.2, 0.0])\n    29\n    >>> lst([-2.4, 1.0, 1.0])\n    6\n    \n\n    \"\"\"",
+  "completions": [
+    "\n    return sum(map(lambda x: x**2, lst))\n",
+    "\n    return sum(map(lambda x: x**2, lst))\n\n",
+    "\n    return sum(map(lambda x: x**2, lst))\n",
+    "\n    return sum(map(lambda x: x**2, lst))\n\n",
+    "\n    return sum(map(lambda x: x**2, lst))\n\n",
+    "\n    return sum(map(lambda x: x**2, lst))\n",
+    "\n    return sum(map(lambda x: x ** 2, lst))\n",
+    "\n    return sum(map(lambda x: x**2, lst))\n\n",
+    "\n    return sum(map(lambda x: x**2, lst))\n\n",
+    "\n    return sum(map(lambda x: x**2, lst))\n\n",
+    "\n    return sum(map(lambda x: x ** 2, lst))\n\n",
+    "\n    return sum(map(lambda x: x**2, lst))\n",
+    "\n    return sum(map(lambda x: x**2, lst))\n",
+    "\n    return sum(map(lambda x: x**2, lst))\n",
+    "\n    return sum(map(lambda x: x**2, lst))\n\n",
+    "\n    return sum(map(lambda x: x**2, lst))\n",
+    "\n    return sum(map(lambda x: x**2, lst))\n",
+    "\n    return sum(map(lambda x: x**2, lst))\n\n",
+    "\n    return sum(map(lambda x: x**2, lst))\n",
+    "\n    return sum(map(lambda x: x ** 2, lst))\n\n"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_51_remove_vowels",
+  "prompt": "def remove_vowels(text: str) -> str:\n    \"\"\"\n    remove_vowels is a function that takes string and returns string without vowels.\n    >>> remove_vowels('')\n    ''\n    >>> remove_vowels('abcdef')\n    'bcdf'\n    >>> remove_vowels('aaaaa')\n    ''\n    >>> remove_vowels('aaBAA')\n    'B'\n    >>> remove_vowels('zbcd')\n    'zbcd'\n    \"\"\"",
+  "completions": [
+    "\n    return text.replace('a', '').replace('e', '').replace('i', '').replace('o', '').replace('u', '').replace('A', '').replace('E', '').replace('I', '').replace('O', '').replace('U', '')\n\n",
+    "\n    return ''.join(i for i in text if i not in 'aeiouAEIOU')\n\n",
+    "\n    return ''.join(c for c in text if c not in 'aeiouAEIOU')\n\n",
+    "\n    return text.replace('a', 'e').replace('e', 'a').replace('i', 'i').replace('o', 'o').replace('u', 'u')\n\n",
+    "\n    return text.replace('a', 'e').replace('e', 'a').replace('i', 'a').replace('o', 'a').replace('u', 'a')\n\n",
+    "\n    return text.replace('a', 'e').replace('A', 'E').replace('b', 'e').replace('B', 'E').replace('c', 'e').replace('C', 'E').replace('d', 'e').replace('D', 'E').replace('e', 'i').replace('E', 'I').replace('f', 'i').replace('F', 'I')\n\n",
+    "\n    return ''.join(c for c in text if c not in 'aeiouAEIOU')\n\n",
+    "\n    return ' '.join(text.split(' ')[0].lower().replace('a', 'e').replace('e', 'i').replace('i', 'o').replace('o', 'u').replace('u', 'y') for text in text.split(' '))\n\n",
+    "\n    return ''.join(c for c in text if c not in 'aeiouAEIOU')\n\n",
+    "\n    return ''.join(c for c in text if c not in 'aeiouAEIOU')\n\n",
+    "\n    return ''.join(ch for ch in text if not ch in 'aeiouAEIOU')\n\n",
+    "\n    return ''.join(c for c in text if not c in 'aeiouAEIOU')\n\n",
+    "\n    return ''.join(c for c in text if c not in 'aeiouAEIOU')\n\n",
+    "\n    return ''.join(c for c in text if c not in 'aeiouAEIOU')\n\n",
+    "\n    return ''.join(c for c in text if c not in 'aeiouAEIOU')\n\n",
+    "\n    return text.replace('aeiou', '')\n\n",
+    "\n    return ''.join(c for c in text if c not in 'aeiouAEIOU')\n\n",
+    "\n    return text.replace('a', 'e').replace('e', 'a').replace('i', 'i').replace('o', 'o').replace('u', 'u')\n\n",
+    "\n    vowels = 'aeiou'\n    return ''.join(c for c in text if c not in vowels)\n\n",
+    "\n    return ''.join(c for c in text if c not in 'aeiouAEIOU')\n\n"
+  ]
+}

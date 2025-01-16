@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_145_order_by_points",
+  "prompt": "from typing import List\n\ndef order_by_points(nums: List[int]) -> List[int]:\n    \"\"\"\n    Write a function which sorts the given list of integers\n    in ascending order according to the sum of their digits.\n    Note: if there are several items with similar sum of their digits,\n    order them based on their index in original list.\n\n    For example:\n    >>> order_by_points([1, 11, -1, -11, -12])\n    [-1, -11, 1, -12, 11]\n    >>> order_by_points([])\n    []\n    \"\"\"",
+  "completions": [
+    "\n    return sorted(nums, key=lambda x: sum(int(i) for i in str(x)))\n",
+    "\n    return sorted(nums, key=lambda x: sum(int(c) for c in str(x)))\n",
+    "\n    return sorted(nums, key=lambda x: sum(int(i) for i in str(x)))\n",
+    "\n    return sorted(nums, key=lambda x: sum(int(x[0]) for x in x))\n",
+    "\n    return sorted(nums, key=lambda x: sum(int(c) for c in str(x)))\n",
+    "\n    return sorted(nums, key=lambda x: sum(int(x) for x in str(x)))\n\n",
+    "\n    return sorted(nums, key=lambda x: sum(int(x) for x in str(x)))\n",
+    "\n    return sorted(nums, key=lambda x: sum(int(x) for x in str(x)))\n",
+    "\n    return sorted(nums, key=lambda x: sum(int(i) for i in str(x)))\n",
+    "\n    return sorted(nums, key=lambda x: sum(int(x) for x in str(x)))\n",
+    "\n    return sorted(nums, key=lambda x: sum(int(i) for i in str(x)))\n",
+    "\n    return sorted(nums, key=lambda x: sum(int(i) for i in str(x)))\n\n",
+    "\n    return sorted(nums, key=lambda x: sum(int(i) for i in str(x)))\n\n",
+    "\n    return sorted(nums, key=lambda x: sum(int(i) for i in str(x)))\n",
+    "\n    return sorted(nums, key=lambda x: sum(int(i) for i in str(x)))\n\n",
+    "\n    if not nums:\n        return []\n\n    # sort by sum of digits\n    # if there are multiple items with the same sum of digits,\n    # sort them by their index in original list\n    # if there are multiple items with the same index in original list,\n    # sort them by their index in original list\n    # if there are multiple items with the same index in original list,\n    # sort them by their index in original list\n    # if there are multiple items with the same index in original list,\n    # sort them by their index in original list\n    # if there are multiple items with the same index in original list,\n    # sort them by their index in original list\n    # if there are multiple items with the same index in original list,\n    # sort them by their index in original list\n    # if there are multiple items with the same index in original list,\n    # sort them by their index in original list\n    # if there are multiple items with the same index in original list,\n    # sort them by their index in original list\n    # if there are multiple items with the same index in original list,\n    # sort them by their index in original list\n    # if there are multiple items with the same index in original list,\n    # sort them by their index in original list\n    # if there are multiple items with the same index in original list,\n    # sort them by their index in original list\n    # if there are multiple items with the same index",
+    "\n    return sorted(nums, key=lambda x: sum(int(x) for x in str(x)))\n",
+    "\n    return sorted(nums, key=lambda x: sum(int(x) for x in str(x)))\n",
+    "\n    return sorted(nums, key=lambda x: sum(int(i) for i in str(x)))\n",
+    "\n    return sorted(nums, key=lambda x: sum(int(x) for x in str(x)))\n\n"
+  ]
+}

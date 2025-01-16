@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_53_add",
+  "prompt": "def add(x: int, y: int) -> int:\n    \"\"\"Add two numbers x and y\n    >>> add(2, 3)\n    5\n    >>> add(5, 7)\n    12\n    \"\"\"",
+  "completions": [
+    "\n    return x + y\n\n",
+    "\n    return x + y\n\n",
+    "\n    return x + y\n\n",
+    "\n    return x + y\n\n",
+    "\n    return x + y\n\n",
+    "\n    return x + y\n\n",
+    "\n    return x + y\n",
+    "\n    return x + y\n\n",
+    "\n    return x + y\n\n",
+    "\n    return x + y\n\n",
+    "\n    return x + y\n\n",
+    "\n    return x + y\n\n",
+    "\n    return x + y\n",
+    "\n    return x + y\n\n",
+    "\n    return x + y\n\n",
+    "\n    return x + y\n",
+    "\n    return x + y\n",
+    "\n    return x + y\n\n",
+    "\n    return x + y\n",
+    "\n    return x + y\n"
+  ]
+}

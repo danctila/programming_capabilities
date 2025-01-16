@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_161_solve",
+  "prompt": "def solve(s: str) -> str:\n    \"\"\"You are given a string s.\n    if s[i] is a letter, reverse its case from lower to upper or vise versa, \n    otherwise keep it as it is.\n    If the string contains no letters, reverse the string.\n    The function should return the resulted string.\n    Examples\n    >>> solve('1234')\n    '4321'\n    >>> solve('ab')\n    'AB'\n    >>> solve('#a@C')\n    '#A@c'\n    \"\"\"",
+  "completions": [
+    "\n    if s == '':\n        return s\n    if s[0] == 'a' or s[0] == 'A':\n        return solve(s[1:])\n    else:\n        return s[::-1]\n",
+    "\n    if s == '':\n        return s\n    if s[0].isupper():\n        return s[1:] + s[0].lower()\n    else:\n        return s[1:] + s[0].upper()\n",
+    "\n    if s == '':\n        return s[::-1]\n    if s[0].isupper():\n        return s[1:] + s[0].lower()\n    return s[::-1]\n",
+    "\n    if s == '':\n        return s\n    if s[0].isupper():\n        return s[1:] + s[0].lower()\n    return s[0].lower() + s[1:] + s[0].upper()\n\n",
+    "\n    if s == '':\n        return s\n    if s[0].isalpha():\n        return solve(s[1:])\n    return solve(s[1:])\n",
+    "\n    if s == '':\n        return s\n    if s[0] == s[-1]:\n        return solve(s[1:-1])\n    return s[::-1]\n",
+    "\n    if s == '':\n        return s\n    if s[0].isalpha():\n        return solve(s[1:])\n    return s[::-1]\n\n",
+    "\n    if s == '':\n        return s\n    if s[0].isupper():\n        return s[1:] + s[0].lower()\n    else:\n        return s[1:] + s[0].upper()\n",
+    "\n    if s == '':\n        return s\n    if s[0].islower():\n        return s[1:].upper() + s[0]\n    else:\n        return s[1:].lower() + s[0]\n",
+    "\n    if s == '':\n        return s[::-1]\n    if s[0] == s[-1]:\n        return solve(s[1:-1])\n    else:\n        return s[::-1]\n",
+    "\n    if s == '':\n        return s\n    if s[0].isalpha():\n        return solve(s[1:])\n    return s[::-1]\n",
+    "\n    if s == '':\n        return s\n    if s[0] in 'abcdefghijklmnopqrstuvwxyz':\n        return solve(s[1:])\n    return s[::-1]\n\n",
+    "\n    if s == '':\n        return s\n    if s[0].isupper():\n        return s[0].lower() + solve(s[1:])\n    else:\n        return s[0].upper() + solve(s[1:])\n",
+    "\n    if s == '':\n        return s[::-1]\n    elif s[0] in 'abcdefghijklmnopqrstuvwxyz':\n        return s[::-1] + s[1:]\n    else:\n        return s[::-1] + s[0]\n\n",
+    "\n    if s == '':\n        return s\n    if s[0].isalpha():\n        return solve(s[1:])\n    return s[0].lower() + solve(s[1:])\n",
+    "\n    if s == '':\n        return s\n    if s[0].islower():\n        return s[1:] + s[0].upper()\n    else:\n        return s[1:] + s[0].lower()\n",
+    "\n    if s == '':\n        return s\n    if s[0] == 'a' or s[0] == 'A':\n        return solve(s[1:])\n    else:\n        return s[0].upper() + solve(s[1:])\n",
+    "\n    if s == '':\n        return s\n    if s[0].isupper():\n        return s[1:] + s[0].lower()\n    else:\n        return s[1:] + s[0].upper()\n",
+    "\n    if s.isalpha():\n        return s[::-1]\n    else:\n        return s[::-1]\n",
+    "\n    if s == '':\n        return s\n    if s[0].isupper():\n        return s[1:] + s[0].lower()\n    else:\n        return s[1:] + s[0].upper()\n"
+  ]
+}

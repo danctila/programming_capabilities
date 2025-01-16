@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_65_circular_shift",
+  "prompt": "def circular_shift(x: int, shift: int) -> str:\n    \"\"\"Circular shift the digits of the integer x, shift the digits right by shift\n    and return the result as a string.\n    If shift > number of digits, return digits reversed.\n    >>> circular_shift(12, 1)\n    '21'\n    >>> circular_shift(12, 2)\n    '12'\n    \"\"\"",
+  "completions": [
+    "\n    if shift > len(str(x)):\n        return str(x)[::-1]\n    return str(x)[-shift:] + str(x)[:shift]\n\n",
+    "\n    return str(x)[::-1] + str(x)[::-1]\n\n",
+    "\n    return str(x)[::-1] if shift > len(str(x)) else str(x)[-(shift % len(str(x))):]\n\n",
+    "\n    if shift > len(str(x)):\n        return str(x)[::-1]\n    return str(x)[-shift:] + str(x)[:-shift]\n\n",
+    "\n    if shift > len(str(x)):\n        return str(x)[::-1]\n    return str(x)[-shift:] + str(x)[:-shift]\n\n",
+    "\n    if shift > len(str(x)):\n        return str(x)[::-1]\n    return str(x)[-shift:] + str(x)[:shift]\n\n",
+    "\n    if shift > len(str(x)):\n        return str(x)[::-1]\n    return str(x)[-shift:] + str(x)[:shift]\n\n",
+    "\n    if shift > len(str(x)):\n        return str(x)[::-1]\n    return str(x)[-shift:] + str(x)[:-shift]\n\n",
+    "\n    if shift > len(str(x)):\n        return str(x)[::-1]\n    return str(x)[:shift] + circular_shift(x, shift - len(str(x)))\n\n",
+    "\n    if shift > len(str(x)):\n        return str(x)[::-1]\n    return str(x)[-shift:] + str(x)[:-shift]\n\n",
+    "\n    if shift > len(str(x)):\n        return str(x)[::-1]\n    return str(x)[-shift:] + str(x)[:-shift]\n\n",
+    "\n    if shift > len(str(x)):\n        return str(x)[::-1]\n    return str(x)[-shift:] + str(x)[:shift]\n\n",
+    "\n    return str(x)[::-1] if shift > len(str(x)) else str(x)[-shift:]\n\n",
+    "\n    if shift > len(str(x)):\n        return str(x)[::-1]\n    return str(x)[-shift:] + str(x)[:-shift]\n\n",
+    "\n    return ''.join(str(x)[-shift:] + str(x)[:shift])\n\n",
+    "\n    return str(x)[::-1] if shift > len(str(x)) else str(x)[-shift:] + str(x)[:-shift]\n\n",
+    "\n    if shift > len(str(x)):\n        return str(x)[::-1]\n    return str(x)[-shift:] + str(x)[:-shift]\n\n",
+    "\n    if shift > len(str(x)):\n        return str(x)[::-1]\n    return str(x)[-shift:] + str(x)[:-shift]\n\n",
+    "\n    return str(int(str(x)[::-1] + str(x)[::-1]) % 10)\n\n",
+    "\n    if shift > len(str(x)):\n        return str(x)[::-1]\n    return str(x)[-shift:] + str(x)[:shift]\n\n"
+  ]
+}

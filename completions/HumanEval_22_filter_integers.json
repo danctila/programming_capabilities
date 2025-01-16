@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_22_filter_integers",
+  "prompt": "from typing import List, Any\n\ndef filter_integers(values: List[Any]) -> List[int]:\n    \"\"\" Filter given list of any python values only for integers\n    >>> filter_integers(['a', 3.14, 5])\n    [5]\n    >>> filter_integers([1, 2, 3, 'abc', {  }, []])\n    [1, 2, 3]\n    \"\"\"",
+  "completions": [
+    "\n    return [int(x) for x in values]\n",
+    "\n    return [int(v) for v in values if isinstance(v, int)]\n",
+    "\n    return [int(v) for v in values if isinstance(v, int)]\n",
+    "\n    return [int(v) for v in values if isinstance(v, int)]\n",
+    "\n    return [int(x) for x in values if isinstance(x, int)]\n",
+    "\n    return [int(v) for v in values]\n",
+    "\n    return [int(x) for x in values]\n",
+    "\n    return [int(x) for x in values if isinstance(x, int)]\n",
+    "\n    return [int(x) for x in values]\n",
+    "\n    return [int(v) for v in values if isinstance(v, int)]\n",
+    "\n    return [int(x) for x in values]\n",
+    "\n    return [int(x) for x in values]\n",
+    "\n    return [int(v) for v in values]\n",
+    "\n    return [int(x) for x in values]\n",
+    "\n    return [int(v) for v in values if isinstance(v, int)]\n",
+    "\n    return [int(x) for x in values]\n",
+    "\n    return [int(i) for i in values]\n",
+    "\n    return [int(v) for v in values if isinstance(v, int)]\n",
+    "\n    return [int(x) for x in values]\n",
+    "\n    return [int(x) for x in values if isinstance(x, int)]\n"
+  ]
+}

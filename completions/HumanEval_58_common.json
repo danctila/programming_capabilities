@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_58_common",
+  "prompt": "from typing import List\n\ndef common(l1: List[int], l2: List[int]) -> List[int]:\n    \"\"\"Return sorted unique common elements for two lists.\n    >>> common([1, 4, 3, 34, 653, 2, 5], [5, 7, 1, 5, 9, 653, 121])\n    [1, 5, 653]\n    >>> common([5, 3, 2, 8], [3, 2])\n    [2, 3]\n\n    \"\"\"",
+  "completions": [
+    "\n    if not l1:\n        return l2\n    if not l2:\n        return l1\n    if l1[0] == l2[0]:\n        return common(l1[1:], l2[1:])\n    else:\n        return [l1[0]] + common(l1[1:], l2) + common(l1[1:], l2[1:])\n\n",
+    "\n    l1 = sorted(set(l1))\n    l2 = sorted(set(l2))\n    return [i for i in l1 if i in l2]\n",
+    "\n    if l1 == [] or l2 == []:\n        return []\n    else:\n        return sorted(set(l1).intersection(set(l2)))\n",
+    "\n    if not l1 or not l2:\n        return []\n    return sorted(set(l1).intersection(set(l2)))\n\n",
+    "\n    if not l1 or not l2:\n        return []\n    return sorted(set(l1).intersection(set(l2)))\n",
+    "\n    return sorted(set(l1).intersection(l2))\n",
+    "\n    if not l1 or not l2:\n        return []\n    res = []\n    for i in range(len(l1)):\n        if l1[i] in l2:\n            res.append(l1[i])\n    return res\n",
+    "\n    return sorted(set(l1) & set(l2))\n",
+    "\n    l1 = sorted(set(l1))\n    l2 = sorted(set(l2))\n    return l1 + l2\n",
+    "\n    l1 = sorted(set(l1))\n    l2 = sorted(set(l2))\n    return l1 + l2\n",
+    "\n    l1 = sorted(set(l1))\n    l2 = sorted(set(l2))\n    return l1 + l2\n",
+    "\n    return sorted(set(l1) & set(l2))\n\n",
+    "\n    return sorted(set(l1) & set(l2))\n",
+    "\n    return sorted(set(l1) & set(l2))\n",
+    "\n    if not l1 or not l2:\n        return []\n    res = []\n    for i in range(len(l1)):\n        if l1[i] not in l2:\n            res.append(l1[i])\n    return res\n",
+    "\n    if not l1:\n        return l2\n    if not l2:\n        return l1\n    if l1[0] > l2[0]:\n        l1, l2 = l2, l1\n    l1.sort()\n    l2.sort()\n    return [l1[i] for i in range(len(l1)) if l1[i] == l2[i]]\n",
+    "\n    l1_set = set(l1)\n    l2_set = set(l2)\n    return list(l1_set & l2_set)\n",
+    "\n    if not l1 or not l2:\n        return []\n    return sorted(set(l1) & set(l2))\n",
+    "\n    return sorted(set(l1).intersection(l2))\n",
+    "\n    if not l1 or not l2:\n        return []\n    l1 = sorted(l1)\n    l2 = sorted(l2)\n    return [i for i in l1 if i in l2]\n"
+  ]
+}

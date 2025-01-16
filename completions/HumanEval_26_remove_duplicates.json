@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_26_remove_duplicates",
+  "prompt": "from typing import List\n\ndef remove_duplicates(numbers: List[int]) -> List[int]:\n    \"\"\" From a list of integers, remove all elements that occur more than once.\n    Keep order of elements left the same as in the input.\n    >>> remove_duplicates([1, 2, 3, 2, 4])\n    [1, 3, 4]\n    \"\"\"",
+  "completions": [
+    "\n    seen = set()\n    return [i for i in numbers if i not in seen]\n",
+    "\n    seen = set()\n    return [i for i in numbers if i not in seen]\n",
+    "\n    return [i for i in numbers if numbers.count(i) == 1]\n",
+    "\n    seen = set()\n    result = []\n    for number in numbers:\n        if number not in seen:\n            result.append(number)\n            seen.add(number)\n    return result\n",
+    "\n    seen = set()\n    for num in numbers:\n        if num in seen:\n            continue\n        seen.add(num)\n        numbers.remove(num)\n    return numbers\n",
+    "\n    return list(set(numbers))\n",
+    "\n    seen = set()\n    for num in numbers:\n        if num in seen:\n            continue\n        seen.add(num)\n        numbers.remove(num)\n    return numbers\n",
+    "\n    seen = set()\n    for num in numbers:\n        if num not in seen:\n            seen.add(num)\n            numbers.remove(num)\n    return numbers\n",
+    "\n    seen = set()\n    result = []\n    for num in numbers:\n        if num not in seen:\n            result.append(num)\n            seen.add(num)\n    return result\n",
+    "\n    new_list = []\n    for i in numbers:\n        if i not in new_list:\n            new_list.append(i)\n    return new_list\n",
+    "\n    seen = set()\n    for num in numbers:\n        if num not in seen:\n            seen.add(num)\n            numbers.remove(num)\n    return numbers\n\n",
+    "\n    return [i for i in numbers if numbers.count(i) == 1]\n",
+    "\n    seen = set()\n    for num in numbers:\n        if num in seen:\n            continue\n        seen.add(num)\n        numbers.remove(num)\n    return numbers\n",
+    "\n    # TODO: Implement this function\n    return numbers\n\n",
+    "\n    seen = set()\n    for num in numbers:\n        if num not in seen:\n            seen.add(num)\n            numbers.remove(num)\n    return numbers\n",
+    "\n    seen = set()\n    return [i for i in numbers if i not in seen]\n",
+    "\n    # TODO: write your code here\n    return list(set(numbers))\n",
+    "\n    seen = set()\n    for num in numbers:\n        if num in seen:\n            continue\n        seen.add(num)\n        numbers.remove(num)\n    return numbers\n",
+    "\n    return [i for i in numbers if numbers.count(i) == 1]\n",
+    "\n    seen = set()\n    for num in numbers:\n        if num in seen:\n            continue\n        seen.add(num)\n        numbers.remove(num)\n    return numbers\n"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_16_count_distinct_characters",
+  "prompt": "def count_distinct_characters(string: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> count_distinct_characters('xyzXYZ')\n    3\n    >>> count_distinct_characters('Jerry')\n    4\n    \"\"\"",
+  "completions": [
+    "\n    return len(set(string))\n\n",
+    "\n    return len(set(string))\n\n",
+    "\n    return len(set(string))\n\n",
+    "\n    return len(set(string))\n\n",
+    "\n    return len(set(string))\n\n",
+    "\n    return len(set(string))\n\n",
+    "\n    return len(set(string))\n\n",
+    "\n    return len(set(string))\n\n",
+    "\n    return len(set(string))\n\n",
+    "\n    return len(set(string))\n\n",
+    "\n    count = 0\n    for char in string:\n        if char.isupper():\n            count += 1\n        elif char.islower():\n            count += 1\n        else:\n            count += 1\n    return count\n\n",
+    "\n    return len(set(string))\n\n",
+    "\n    return len(set(string))\n\n",
+    "\n    return len(set(string))\n\n",
+    "\n    return len(set(string))\n\n",
+    "\n    return len(set(string))\n\n",
+    "\n    return len(set(string))\n\n",
+    "\n    return len(set(string))\n\n",
+    "\n    return len(set(string))\n\n",
+    "\n    return len(set(string))\n\n"
+  ]
+}

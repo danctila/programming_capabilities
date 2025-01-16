@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_91_is_bored",
+  "prompt": "def is_bored(S: str) -> int:\n    \"\"\"\n    You'll be given a string of words, and your task is to count the number\n    of boredoms. A boredom is a sentence that starts with the word \"I\".\n    Sentences are delimited by '.', '?' or '!'.\n   \n    For example:\n    >>> is_bored('Hello world')\n    0\n    >>> is_bored('The sky is blue. The sun is shining. I love this weather')\n    1\n    \"\"\"",
+  "completions": [
+    "\n    S = S.strip()\n    return len(S.split(' ')) - len(S.split('?')) - len(S.split('!'))\n",
+    "\n    return len(S.split('.')) + len(S.split('?')) + len(S.split('!'))\n\n",
+    "\n    if not S:\n        return 0\n    if S[0] == 'I':\n        return 1\n    return 0\n",
+    "\n    return len(S.split('.')) + len(S.split('?')) + len(S.split('!'))\n\n",
+    "\n    S = S.replace('.', '?')\n    S = S.replace('!', '?')\n    S = S.replace('I', '!')\n    S = S.replace('I', '?')\n    S = S.replace('I', '!')\n    S = S.replace('I', '?')\n    S = S.replace('I', '!')\n    S = S.replace('I', '?')\n    S = S.replace('I', '!')\n    S = S.replace('I', '?')\n    S = S.replace('I', '!')\n    S = S.replace('I', '?')\n    S = S.replace('I', '!')\n    S = S.replace('I', '?')\n    S = S.replace('I', '!')\n    S = S.replace('I', '?')\n    S = S.replace('I', '!')\n    S = S.replace('I', '?')\n    S = S.replace('I', '!')\n    S = S.replace('I', '?')\n    S = S.replace('I', '!')\n    S = S.replace('I', '?')\n    S = S.replace('I', '!')\n    S = S.replace('I', '?')\n    S = S.replace('I', '!')\n    S = S.replace('I', '?')\n   ",
+    "\n    S = S.strip()\n    return len(S.split('.')) + len(S.split('?')) + len(S.split('!'))\n\n",
+    "\n    return sum(1 for word in S.split() if word.startswith('I'))\n",
+    "\n    return sum(1 for word in S.split() if word.startswith('I'))\n\n",
+    "\n    # TODO: Implement your solution here\n    if len(S) == 0:\n        return 0\n    if S[0] == 'I':\n        return 1\n    return 0\n",
+    "\n    if not S:\n        return 0\n    if S[0] == 'I':\n        return 1\n    return 0\n",
+    "\n    return len(S.split()) - len(S.split('.')) - len(S.split('?')) - len(S.split('!'))\n\n",
+    "\n    return sum(1 for word in S.split() if word.startswith('I'))\n",
+    "\n    S = S.split()\n    return len(set(S))\n\n",
+    "\n    return sum(1 for word in S.split() if word.startswith('I'))\n\n",
+    "\n    return len(S.split())\n\n",
+    "\n    S = S.strip()\n    return len(S.split('.')) + len(S.split('?')) + len(S.split('!'))\n",
+    "\n    return len(S.split()) - len(S.split('!'))\n\n",
+    "\n    return len(S.split('.')) + len(S.split('?')) + len(S.split('!'))\n\n",
+    "\n    return len(S.split('.')) + len(S.split('?')) + len(S.split('!'))\n\n",
+    "\n    return len(S.split()) - len(S.split('!'))\n"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_27_flip_case",
+  "prompt": "def flip_case(string: str) -> str:\n    \"\"\" For a given string, flip lowercase characters to uppercase and uppercase to lowercase.\n    >>> flip_case('Hello')\n    'hELLO'\n    \"\"\"",
+  "completions": [
+    "\n    return string.swapcase()\n\n",
+    "\n    return string.swapcase()\n\n",
+    "\n    return string.swapcase()\n\n",
+    "\n    return string.swapcase()\n\n",
+    "\n    return string.swapcase()\n\n",
+    "\n    return string.swapcase()\n\n",
+    "\n    return string.swapcase()\n\n",
+    "\n    return string.swapcase()\n\n",
+    "\n    return string.swapcase()\n\n",
+    "\n    return string.swapcase()\n\n",
+    "\n    return string.swapcase()\n\n",
+    "\n    return string.swapcase()\n\n",
+    "\n    return string.swapcase()\n\n",
+    "\n    return string.swapcase()\n\n",
+    "\n    return string.swapcase()\n\n",
+    "\n    return string.swapcase()\n\n",
+    "\n    return string.swapcase()\n\n",
+    "\n    return string.swapcase()\n\n",
+    "\n    return string.replace('a', 'A').replace('A', 'a')\n\n",
+    "\n    return string.swapcase()\n\n"
+  ]
+}

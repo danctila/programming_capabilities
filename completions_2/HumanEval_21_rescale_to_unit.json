@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_21_rescale_to_unit",
+  "prompt": "from typing import List\n\ndef rescale_to_unit(numbers: List[float]) -> List[float]:\n    \"\"\" Given list of numbers (of at least two elements), apply a linear transform to that list,\n    such that the smallest number will become 0 and the largest will become 1\n    >>> rescale_to_unit([1.0, 2.0, 3.0, 4.0, 5.0])\n    [0.0, 0.25, 0.5, 0.75, 1.0]\n    \"\"\"",
+  "completions": [
+    "\n    return [x / max(numbers) for x in numbers]\n",
+    "\n    return [number / max(numbers) for number in numbers]\n",
+    "\n    return [number * 2.0 for number in numbers]\n",
+    "\n    return [number * 2.0 for number in numbers]\n",
+    "\n    return [number * 2.0 for number in numbers]\n",
+    "\n    return [float(number) / float(max(numbers)) for number in numbers]\n",
+    "\n    return [float(number) / max(numbers) for number in numbers]\n",
+    "\n    return [x / max(numbers) for x in numbers]\n",
+    "\n    return [1.0 / (x + 1) for x in numbers]\n",
+    "\n    return [x / min(numbers) for x in numbers]\n",
+    "\n    return [float(x) / max(numbers) for x in numbers]\n",
+    "\n    return [number * 2.0 for number in numbers]\n",
+    "\n    return [x / max(numbers) for x in numbers]\n",
+    "\n    return [number * 2.0 for number in numbers]\n",
+    "\n    return [number * 2.0 for number in numbers]\n",
+    "\n    return [round(x * 2) for x in numbers]\n",
+    "\n    return [x / max(numbers) for x in numbers]\n",
+    "\n    return [x / sum(numbers) for x in numbers]\n",
+    "\n    return [number * 2.0 for number in numbers]\n",
+    "\n    return [x / max(numbers) for x in numbers]\n"
+  ]
+}

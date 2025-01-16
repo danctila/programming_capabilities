@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_125_split_words",
+  "prompt": "from typing import Union, List\n\ndef split_words(txt: str) -> Union[List[str], int]:\n    \"\"\"\n    Given a string of words, return a list of words split on whitespace, if no whitespaces exists in the text you\n    should split on commas ',' if no commas exists you should return the number of lower-case letters with odd order in the\n    alphabet, ord('a') = 0, ord('b') = 1, ... ord('z') = 25\n    Examples\n    >>> split_words('Hello world!')\n    ['Hello', 'world!']\n    >>> split_words('Hello,world!')\n    ['Hello', 'world!']\n    >>> split_words('abcdef')\n    3\n    \"\"\"",
+  "completions": [
+    "\n    if txt.isspace():\n        return [txt]\n    elif txt.isalpha():\n        return [ord(c) for c in txt]\n    else:\n        return [ord(c) for c in txt.split(',')]\n",
+    "\n    if txt.isspace():\n        return [txt]\n    if txt.count(',') != 0:\n        return [txt[0]] + split_words(txt[1:])\n    return ord(txt[0]) - ord('a') + 1\n",
+    "\n    return [word for word in txt.split() if word] if txt.count(',') > 0 else ord('a')\n",
+    "\n    if not txt:\n        return 0\n    if txt.isspace():\n        return 0\n    if txt[0] == ',' and txt[-1] == ',' and len(txt) > 1:\n        return ord(txt[0]) - ord('a') + 1\n    return ord(txt[0]) - ord('a') + 1\n",
+    "\n    if txt == '':\n        return 0\n    return [x.strip() for x in txt.split()]\n",
+    "\n    return [word for word in txt.split() if word]\n",
+    "\n    if txt.isspace():\n        return [txt]\n    if ord(txt[0]) == 0:\n        return [ord(txt[0])]\n    return [txt[0]] + [txt[1:] for txt in txt.split(' ', 1)]\n",
+    "\n    if txt.isspace():\n        return txt.split()\n    else:\n        return [txt[i:i+2] for i in range(0, len(txt), 2)]\n",
+    "\n    if txt.isspace():\n        return [txt]\n    elif txt[0].isalpha():\n        return [txt[0]]\n    else:\n        return [txt[0]] + [txt[1:]]\n",
+    "\n    if txt.isspace():\n        return []\n    if txt.isdigit():\n        return [txt]\n    if txt.isalpha():\n        return [ord(c) for c in txt]\n    return [txt]\n",
+    "\n    if txt.isspace():\n        return [txt]\n    elif txt.isalpha():\n        return [ord(c) for c in txt]\n    else:\n        return [ord(c) for c in txt.split(',')]\n",
+    "\n    if txt.isspace():\n        return [txt]\n    elif txt[0].isspace():\n        return [txt[0]]\n    else:\n        return [txt[0]] + [txt[1:]]\n",
+    "\n    if txt == '':\n        return 0\n    if txt[0] == ' ':\n        return 1\n    if ord(txt[0]) == 0:\n        return 1\n    return 0\n",
+    "\n    if not txt:\n        return 0\n    if txt.isspace():\n        return 0\n    if ord(txt[0]) == 97:\n        return 1\n    return ord(txt[0]) - ord('a') + 1\n",
+    "\n    if not txt:\n        return 0\n    if txt.isspace():\n        return 0\n    if ord(txt[0]) == ord('a'):\n        return 1\n    return ord(txt[0]) - ord('a') + 1\n",
+    "\n    if not txt:\n        return 0\n    words = txt.split()\n    if len(words) == 0:\n        return 0\n    if len(words) == 1:\n        return ord(words[0]) - ord('a')\n    return len(words) - 1 - len(words[1:])\n",
+    "\n    if txt == '':\n        return 0\n    if txt.isalpha():\n        return ord(txt[0]) - ord('a')\n    return 0\n",
+    "\n    if txt.isspace():\n        return [txt]\n    else:\n        return [txt.split()]\n",
+    "\n    if txt == '':\n        return 0\n    words = txt.split()\n    if len(words) == 0:\n        return 0\n    if len(words) == 1:\n        return ord(words[0])\n    return ord(words[0]) - ord('a') + 1\n",
+    "\n    if txt.isspace():\n        return txt.split()\n    return [txt[i:i+1] for i in range(len(txt)) if txt[i] != ' ']\n"
+  ]
+}

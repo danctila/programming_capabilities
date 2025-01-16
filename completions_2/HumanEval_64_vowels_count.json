@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_64_vowels_count",
+  "prompt": "def vowels_count(s: str) -> int:\n    \"\"\"Write a function vowels_count which takes a string representing\n    a word as input and returns the number of vowels in the string.\n    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a\n    vowel, but only when it is at the end of the given word.\n\n    Example:\n    >>> vowels_count('abcde')\n    2\n    >>> vowels_count('ACEDY')\n    3\n    \"\"\"",
+  "completions": [
+    "\n    vowels = 'aeiou'\n    return len(vowels)\n\n",
+    "\n    vowels = ['a', 'e', 'i', 'o', 'u', 'y']\n    return len([i for i in s if i in vowels])\n\n",
+    "\n    vowels = ['a', 'e', 'i', 'o', 'u']\n    return len(s.lower()) - sum(1 for c in s.lower() if c in vowels)\n\n",
+    "\n    vowels = 'aeiou'\n    return len(vowels)\n\n",
+    "\n    vowels = ['a', 'e', 'i', 'o', 'u']\n    return len(vowels)\n\n",
+    "\n    vowels = ['a', 'e', 'i', 'o', 'u']\n    return len(vowels)\n\n",
+    "\n    vowels = set('aeiou')\n    return len(vowels)\n\n",
+    "\n    vowels = 'aeiou'\n    return len(vowels)\n\n",
+    "\n    vowels = 'aeiou'\n    count = 0\n    for char in s:\n        if char in vowels:\n            count += 1\n    return count\n\n",
+    "\n    vowels = ['a', 'e', 'i', 'o', 'u']\n    return len([c for c in s if c in vowels])\n\n",
+    "\n    vowels = ['a', 'e', 'i', 'o', 'u']\n    return len(vowels)\n\n",
+    "\n    vowels = ['a', 'e', 'i', 'o', 'u']\n    return sum(1 for letter in s if letter in vowels)\n\n",
+    "\n    vowels = ['a', 'e', 'i', 'o', 'u']\n    count = 0\n    for char in s:\n        if char in vowels:\n            count += 1\n    return count\n\n",
+    "\n    vowels = ['a', 'e', 'i', 'o', 'u']\n    return len(vowels)\n\n",
+    "\n    vowels = ['a', 'e', 'i', 'o', 'u']\n    return len(set(vowels) & set(s))\n\n",
+    "\n    vowels = ['a', 'e', 'i', 'o', 'u']\n    vowels_count = 0\n    for i in s:\n        if i in vowels:\n            vowels_count += 1\n    return vowels_count\n\n",
+    "\n    vowels = 'aeiou'\n    return len(vowels)\n\n",
+    "\n    vowels = 'aeiou'\n    return sum(1 for char in s if char in vowels)\n\n",
+    "\n    vowels = 'aeiou'\n    count = 0\n    for char in s:\n        if char in vowels:\n            count += 1\n    return count\n\n",
+    "\n    vowels = ['a', 'e', 'i', 'o', 'u']\n    count = 0\n    for char in s:\n        if char in vowels:\n            count += 1\n    return count\n\n"
+  ]
+}

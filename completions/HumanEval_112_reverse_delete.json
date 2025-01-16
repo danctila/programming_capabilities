@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_112_reverse_delete",
+  "prompt": "from typing import Tuple\n\ndef reverse_delete(s: str, c: str) -> Tuple[str, bool]:\n    \"\"\"Task\n    We are given two strings s and c, you have to deleted all the characters in s that are equal to any character in c\n    then check if the result string is palindrome.\n    A string is called palindrome if it reads the same backward as forward.\n    You should return a tuple containing the result string and True/False for the check.\n    Example\n    >>> reverse_delete('abcde', 'ae')\n    ('bcd', False)\n    >>> reverse_delete('abcdef', 'b')\n    ('acdef', False)\n    >>> reverse_delete('abcdedcba', 'ab')\n    ('cdedc', True)\n    \"\"\"",
+  "completions": [
+    "\n    return s, s == c\n\n",
+    "\n    if not s:\n        return (s, True)\n    if not c:\n        return (c, False)\n    if s == c:\n        return (s, True)\n    if s[:len(c)] == c:\n        return (s[:len(c)], True)\n    return (s[:len(c)], False)\n",
+    "\n    return s, False\n\n",
+    "\n    if not s:\n        return (s, True)\n    if c in s:\n        return (s[:c], False)\n    return (s[c:], True)\n",
+    "\n    if len(s) == 0:\n        return s, True\n    if len(c) == 0:\n        return s, False\n    if s[0] == c[0]:\n        return reverse_delete(s[1:], c[1:])\n    return reverse_delete(s[1:], c[1:])\n",
+    "\n    if len(s) == 0:\n        return s, True\n    if len(c) == 0:\n        return s, False\n    if s[0] == c[0]:\n        return reverse_delete(s[1:], c[1:])\n    return reverse_delete(s[1:], c[1:])\n",
+    "\n    return s, c == s[::-1]\n",
+    "\n    if len(s) == 0:\n        return (s, True)\n    if len(c) == 0:\n        return (c, False)\n    if s[0] == c[0]:\n        return (reverse_delete(s[1:], c[1:]), True)\n    if s[-1] == c[-1]:\n        return (reverse_delete(s[:-1], c[1:]), True)\n    return (reverse_delete(s[:-1], c[1:]), False)\n",
+    "\n    if s == c:\n        return (s, True)\n    return (s[:: -1], False)\n",
+    "\n    if not s:\n        return (s, True)\n    if not c:\n        return (c, False)\n    if s == c:\n        return (s, True)\n    if s[0] == c[0]:\n        return (s[1:], False)\n    return (s[1:], reverse_delete(s[1:], c[1:]))\n",
+    "\n    if not s:\n        return (s, False)\n    if not c:\n        return (c, False)\n    if s == c:\n        return (s, True)\n    if s[0] == c[0]:\n        return (reverse_delete(s[1:], c[1:]), True)\n    return (reverse_delete(s[1:], c[1:]), False)\n",
+    "\n    if not s or not c:\n        return (s, True)\n    if c == s[0]:\n        return (s[1:], False)\n    return (s[1:], reverse_delete(s[1:], c))\n",
+    "\n    if len(s) == 0:\n        return (s, True)\n    if len(s) == 1:\n        return (s, False)\n    if c in s:\n        return (s[:c], True)\n    return (s[len(s) - 1], False)\n",
+    "\n    return s, True if c in s else False\n",
+    "\n    return s, True if c == s[::-1] else False\n",
+    "\n    if c in s:\n        return s, True\n    return s, False\n",
+    "\n    if not s:\n        return (s, True)\n    if not c:\n        return (c, False)\n    if s == c:\n        return (s, True)\n    if s[0] == c[0]:\n        return (s[1:], True)\n    if s[1:] == c[1:]:\n        return (s[1:], True)\n    return (s[1:], False)\n",
+    "\n    return s, True if c in s else False\n\n",
+    "\n    if len(s) == 0 or len(c) == 0:\n        return (s, True)\n    if c == s[0]:\n        return (s[1:], False)\n    return (s[1:], reverse_delete(s[1:], c[1:]))\n",
+    "\n    return s, True if c in s else False\n"
+  ]
+}

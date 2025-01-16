@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_44_change_base",
+  "prompt": "def change_base(x: int, base: int) -> str:\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\"",
+  "completions": [
+    "\n    return str(format(x, 'b'))\n\n",
+    "\n    if base < 10:\n        return str(x)\n    else:\n        return change_base(int(x / base), base - 1) + str(x % base)\n\n",
+    "\n    if base == 10:\n        return str(x)\n    elif base < 10:\n        return str(x * 10 ** (base - 1)) + str(x % 10)\n    else:\n        return str(x * 10 ** (base - 1)) + str(x % 10) + change_base(x // 10, base - 1)\n\n",
+    "\n    if base < 10:\n        return str(x)\n    else:\n        return change_base(int(x / base), base - 1) + str(x % base)\n\n",
+    "\n    if base < 10:\n        return str(x)\n    else:\n        return change_base(int(x / base), base - 1) + str(x % base)\n\n",
+    "\n    if base < 10:\n        return str(x)\n    else:\n        return change_base(int(x / base), base - 1) + str(x % base)\n\n",
+    "\n    if base < 10:\n        return str(x)\n    return change_base(int(x / base), base) + str(x % base)\n\n",
+    "\n    if base < 10:\n        return str(x)\n    else:\n        return change_base(int(x / base), base - 1) + str(x % base)\n\n",
+    "\n    if base > 10:\n        return 'Invalid base'\n    if base == 10:\n        return str(x)\n    return str(int(str(x) + str(base - 1)))\n\n",
+    "\n    if base < 10:\n        return str(x)\n    else:\n        return change_base(int(x / base), base - 1) + str(x % base)\n\n",
+    "\n    if base < 10:\n        return str(x)\n    else:\n        return change_base(int(x / base), base - 1) + str(x % base)\n\n",
+    "\n    if base < 10:\n        return str(x)\n    else:\n        return change_base(int(x / base), base - 1) + str(x % base)\n\n",
+    "\n    return str(int(x, base))\n\n",
+    "\n    if base < 10:\n        return str(x)\n    else:\n        return change_base(int(x / base), base - 1) + str(x % base)\n\n",
+    "\n    if base > 10:\n        return 'Error: base must be less than 10'\n    if base == 10:\n        return str(x)\n    return str(x) + change_base(x // base, base)\n\n",
+    "\n    if base < 10:\n        return str(x)\n    else:\n        return change_base(base // 10, base % 10) + str(base)\n\n",
+    "\n    if base > 10:\n        return 'Invalid base'\n    else:\n        return str(x)\n\n",
+    "\n    if base < 10:\n        return str(x)\n    else:\n        return change_base(int(x / base), base - 1) + str(x % base)\n\n",
+    "\n    if base > 10:\n        return change_base(base - 1, base) + str(x)\n    else:\n        return str(x)\n\n",
+    "\n    if base < 10:\n        return str(x)\n    else:\n        return change_base(x // base, base - 1) + str(x % base)\n\n"
+  ]
+}

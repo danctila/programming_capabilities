@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_62_derivative",
+  "prompt": "from typing import List\n\ndef derivative(xs: List[int]) -> List[int]:\n    \"\"\" xs represent coefficients of a polynomial.\n    xs[0] + xs[1] * x + xs[2] * x^2 + ....\n     Return derivative of this polynomial in the same form.\n    >>> derivative([3, 1, 2, 4, 5])\n    [1, 4, 12, 20]\n    >>> derivative([1, 2, 3])\n    [2, 6]\n    \"\"\"",
+  "completions": [
+    "\n    return [1] + [0] * (len(xs) - 1)\n",
+    "\n    return [x * (x - 1) for x in xs]\n",
+    "\n    return [x for x in xs if x != 0]\n",
+    "\n    return [x * (x - 1) for x in xs]\n",
+    "\n    return [1 + (i + 1) * xs[0] for i in range(1, len(xs))]\n",
+    "\n    return [1, 1, 1] + [1, 1, 1] * (len(xs) - 1)\n",
+    "\n    return [x * (x - 1) for x in xs]\n",
+    "\n    return [1, 1, 1]\n\n",
+    "\n    return [1, 2, 3]\n",
+    "\n    return [x * (x - 1) for x in xs]\n",
+    "\n    return [x * (x - 1) for x in xs]\n",
+    "\n    return [x * (x - 1) for x in xs]\n",
+    "\n    return [x * (x - 1) for x in xs]\n",
+    "\n    return [x * i for i, x in enumerate(xs)]\n",
+    "\n    return [1, 2, 3]\n",
+    "\n    return [1] + [xs[i] * (i + 1) for i in range(len(xs) - 1)]\n",
+    "\n    return [x * (x - 1) for x in xs]\n",
+    "\n    return [xs[1] * xs[0] + xs[2] * xs[1] for xs in zip(xs[1:], xs[0])]\n",
+    "\n    return [1] + [x * (xs[i + 1] - xs[i]) for i in range(len(xs) - 1)]\n",
+    "\n    return [0] + [1] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0] + [0"
+  ]
+}

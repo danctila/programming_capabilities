@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_48_is_palindrome",
+  "prompt": "def is_palindrome(text: str) -> bool:\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\"",
+  "completions": [
+    "\n    return text == text[::-1]\n\n",
+    "\n    return text == text[::-1]\n\n",
+    "\n    return text == text[::-1]\n\n",
+    "\n    if len(text) <= 1:\n        return True\n    return text[0] == text[-1] and is_palindrome(text[1:-1])\n\n",
+    "\n    return text == text[::-1]\n\n",
+    "\n    if len(text) <= 1:\n        return True\n    else:\n        return text[0] == text[-1] and is_palindrome(text[1:-1])\n\n",
+    "\n    if len(text) == 0:\n        return True\n    if len(text) == 1:\n        return True\n    if text[0] == text[-1]:\n        return is_palindrome(text[1:-1])\n    return False\n\n",
+    "\n    if len(text) == 1:\n        return True\n    if text[0] == text[-1]:\n        return is_palindrome(text[1:-1])\n    return False\n\n",
+    "\n    return text == text[::-1]\n\n",
+    "\n    if len(text) < 2:\n        return True\n    else:\n        return text[0] == text[-1] and is_palindrome(text[1:-1])\n\n",
+    "\n    return text == text[::-1]\n\n",
+    "\n    return text == text[::-1]\n\n",
+    "\n    if len(text) == 1:\n        return True\n    if text[0] == text[-1]:\n        return is_palindrome(text[1:-1])\n    return False\n\n",
+    "\n    return text == text[::-1]\n\n",
+    "\n    if len(text) < 2:\n        return True\n    if text[0] == text[-1]:\n        return is_palindrome(text[1:-1])\n    return False\n\n",
+    "\n    return text == text[::-1]\n\n",
+    "\n    if len(text) < 2:\n        return True\n    if text[0] == text[-1]:\n        return is_palindrome(text[1:-1])\n    return False\n\n",
+    "\n    return text == text[::-1]\n\n",
+    "\n    if len(text) == 1:\n        return True\n    if text[0] == text[-1]:\n        return is_palindrome(text[1:-1])\n    return False\n\n",
+    "\n    if len(text) <= 1:\n        return True\n    else:\n        return text[0] == text[-1] and is_palindrome(text[1:-1])\n\n"
+  ]
+}

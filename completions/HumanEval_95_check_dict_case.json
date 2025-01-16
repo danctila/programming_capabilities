@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_95_check_dict_case",
+  "prompt": "from typing import Dict\n\ndef check_dict_case(dict: Dict[str, str]) -> bool:\n    \"\"\"\n    Given a dictionary, return True if all keys are strings in lower \n    case or all keys are strings in upper case, else return False.\n    The function should return False is the given dictionary is empty.\n    Examples:\n    >>> check_dict_case({ 'a': 'apple', 'b': 'banana' })\n    True\n    >>> check_dict_case({ 'a': 'apple', 'A': 'banana', 'B': 'banana' })\n    False\n    >>> check_dict_case({ 'a': 'apple', 8: 'banana', 'a': 'apple' })\n    False\n    >>> check_dict_case({ 'Name': 'John', 'Age': '36', 'City': 'Houston' })\n    False\n    >>> check_dict_case({ 'STATE': 'NC', 'ZIP': '12345' })\n    True\n    \"\"\"",
+  "completions": [
+    "\n    if not dict:\n        return False\n    if not isinstance(dict, dict):\n        return False\n    if not all(isinstance(key, str) for key in dict.keys()):\n        return False\n    return True\n",
+    "\n    if not dict:\n        return False\n    if not isinstance(dict, dict):\n        return False\n    if not all(isinstance(key, str) for key in dict.keys()):\n        return False\n    return True\n",
+    "\n    if not dict:\n        return False\n    if not all(isinstance(key, str) for key in dict.keys()):\n        return False\n    return True\n",
+    "\n    if not dict:\n        return False\n    if not all(isinstance(key, str) for key in dict.keys()):\n        return False\n    return True\n",
+    "\n    if not dict:\n        return False\n    if not isinstance(dict, dict):\n        return False\n    if not all(isinstance(key, str) for key in dict.keys()):\n        return False\n    return True\n",
+    "\n    if not dict:\n        return False\n    if not dict.keys():\n        return False\n    return all(map(str.lower, dict.keys())) or all(map(str.upper, dict.keys()))\n",
+    "\n    if not dict:\n        return False\n    if not isinstance(dict, dict):\n        return False\n    if not all(isinstance(key, str) for key in dict.keys()):\n        return False\n    return all(isinstance(value, str) for value in dict.values())\n",
+    "\n    if not dict:\n        return False\n    if not all(isinstance(key, str) for key in dict.keys()):\n        return False\n    return True\n",
+    "\n    if not dict:\n        return False\n    if not all(isinstance(key, str) for key in dict.keys()):\n        return False\n    return all(key.lower() == key.upper() for key in dict.keys())\n",
+    "\n    if not dict:\n        return False\n    if not all(isinstance(key, str) for key in dict):\n        return False\n    return True\n",
+    "\n    if not dict:\n        return False\n    if not all(isinstance(key, str) for key in dict.keys()):\n        return False\n    return all(key.lower() in dict.keys() for key in dict.keys())\n",
+    "\n    if not dict:\n        return False\n    if not all(isinstance(key, str) for key in dict.keys()):\n        return False\n    return True\n",
+    "\n    if not dict:\n        return False\n    if not isinstance(dict, dict):\n        return False\n    if not all(isinstance(key, str) for key in dict.keys()):\n        return False\n    return True\n",
+    "\n    if not dict:\n        return False\n    if not isinstance(dict, dict):\n        return False\n    if not all(isinstance(key, str) for key in dict.keys()):\n        return False\n    return all(key.lower() in dict.keys() for key in dict.keys())\n",
+    "\n    if not dict:\n        return False\n    if not isinstance(dict, dict):\n        return False\n    if not all(isinstance(key, str) for key in dict.keys()):\n        return False\n    if not all(key.lower() in dict.keys() for key in dict.keys()):\n        return False\n    return True\n",
+    "\n    if not dict:\n        return False\n    if not isinstance(dict, dict):\n        return False\n    for key in dict:\n        if not isinstance(dict[key], str):\n            return False\n        if dict[key].isupper():\n            return False\n        if dict[key].islower():\n            return False\n    return True\n",
+    "\n    if not dict:\n        return False\n    if not all(isinstance(key, str) for key in dict.keys()):\n        return False\n    return True\n",
+    "\n    if not dict:\n        return False\n    for key in dict:\n        if not isinstance(dict[key], str):\n            return False\n        if dict[key].lower() != dict[key].upper():\n            return False\n    return True\n",
+    "\n    if not dict:\n        return False\n    if not all(isinstance(key, str) for key in dict.keys()):\n        return False\n    return True\n",
+    "\n    if not dict:\n        return False\n    if not all(isinstance(key, str) for key in dict.keys()):\n        return False\n    return all(key.lower() in dict.keys() for key in dict.keys())\n"
+  ]
+}

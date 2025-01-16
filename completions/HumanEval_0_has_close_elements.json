@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_0_has_close_elements",
+  "prompt": "from typing import List\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    \"\"\" Check if in given list of numbers, are any two numbers closer to each other than\n    given threshold.\n    >>> has_close_elements([1.0, 2.0, 3.0], 0.5)\n    False\n    >>> has_close_elements([1.0, 2.8, 3.0, 4.0, 5.0, 2.0], 0.3)\n    True\n    \"\"\"",
+  "completions": [
+    "\n    return any(abs(number - number + threshold) < threshold for number in numbers)\n",
+    "\n    return any(abs(number - number_2) < threshold for number, number_2 in zip(numbers, numbers[1:]))\n",
+    "\n    return any(abs(x - y) < threshold for x, y in zip(numbers, numbers[1:]))\n",
+    "\n    return any(abs(x - y) < threshold for x, y in zip(numbers, numbers[1:]))\n",
+    "\n    return any(abs(number - threshold) < abs(number - threshold + threshold) for number in numbers)\n",
+    "\n    for i in range(len(numbers)):\n        for j in range(i + 1, len(numbers)):\n            if abs(numbers[i] - numbers[j]) < threshold:\n                return True\n    return False\n",
+    "\n    return any(abs(x - y) < threshold for x, y in zip(numbers, numbers[1:]))\n",
+    "\n    for i in range(len(numbers)):\n        if abs(numbers[i] - numbers[i + 1]) < threshold:\n            return True\n    return False\n",
+    "\n    return any(abs(number - threshold) < abs(number - threshold + threshold) for number in numbers)\n",
+    "\n    for i in range(len(numbers)):\n        for j in range(i + 1, len(numbers)):\n            if abs(numbers[i] - numbers[j]) < threshold:\n                return True\n    return False\n",
+    "\n    return any(abs(number - number_2) < threshold for number, number_2 in zip(numbers, numbers[1:]))\n",
+    "\n    return any(abs(x - y) < threshold for x, y in zip(numbers, numbers[1:]))\n",
+    "\n    return any(abs(x - y) < threshold for x, y in zip(numbers, numbers[1:]))\n",
+    "\n    return any(abs(x - y) < threshold for x, y in zip(numbers, numbers[1:]))\n",
+    "\n    for i in range(len(numbers)):\n        for j in range(i + 1, len(numbers)):\n            if abs(numbers[i] - numbers[j]) < threshold:\n                return True\n    return False\n",
+    "\n    return any(abs(x - y) < threshold for x, y in zip(numbers, numbers[1:]))\n",
+    "\n    return any(abs(x - y) < threshold for x, y in zip(numbers, numbers[1:]))\n",
+    "\n    return any(abs(a - b) < threshold for a, b in zip(numbers, numbers[1:]))\n",
+    "\n    return any(abs(x - y) < threshold for x, y in zip(numbers, numbers[1:]))\n",
+    "\n    if not numbers:\n        return False\n    for i in range(len(numbers) - 1):\n        if abs(numbers[i] - numbers[i + 1]) > threshold:\n            return True\n    return False\n\n"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "problem_id": "HumanEval_113_odd_count",
+  "prompt": "from typing import List\n\ndef odd_count(lst: List[str]) -> List[str]:\n    \"\"\"Given a list of strings, where each string consists of only digits, return a list.\n    Each element i of the output should be \"the number of odd elements in the\n    string i of the input.\" where all the i's should be replaced by the number\n    of odd digits in the i'th string of the input.\n\n    >>> odd_count(['1234567'])\n    ['the number of odd elements 4n the str4ng 4 of the 4nput.']\n    >>> odd_count(['3', '11111111'])\n    ['the number of odd elements 1n the str1ng 1 of the 1nput.', 'the number of odd elements 8n the str8ng 8 of the 8nput.']\n    \"\"\"",
+  "completions": [
+    "\n    return [len(s) % 2 for s in lst]\n",
+    "\n    return [str(len(s) % 2) for s in lst]\n",
+    "\n    return [len(s) % 2 for s in lst]\n",
+    "\n    return [len(s) % 2 for s in lst]\n",
+    "\n    odd_count_list = []\n    for i in lst:\n        odd_count_list.append(len(i) % 2)\n    return odd_count_list\n",
+    "\n    return [len(str(i)) for i in set(lst)]\n",
+    "\n    return [len(s) % 2 for s in lst]\n",
+    "\n    return [len(s) % 2 for s in lst]\n",
+    "\n    odd_count_list = []\n    for i in lst:\n        odd_count_list.append(len(i) % 2)\n    return odd_count_list\n",
+    "\n    return [len(i) for i in lst]\n\n",
+    "\n    return [len(s) % 2 for s in lst]\n\n",
+    "\n    return [len(set(str(i) for i in lst)) for i in lst]\n",
+    "\n    return [len(i) % 2 for i in lst]\n",
+    "\n    return [len(s) % 2 for s in lst]\n",
+    "\n    return [len(set(s)) for s in lst]\n",
+    "\n    return [len(set(str(i))) for i in lst]\n",
+    "\n    return [len(set(str(i) for i in lst)) for i in lst]\n",
+    "\n    return [len(x) % 2 for x in lst]\n",
+    "\n    return [len(i) % 2 for i in lst]\n\n",
+    "\n    return [len(set(x)) for x in lst]\n"
+  ]
+}
